@@ -309,7 +309,7 @@
 <script>window.__TOI_AUTOSCROLL_SPEED = 60;</script><style id="__v3-scroll-reveal">[data-toi-auto-reveal]{opacity:0;translate:0 30px;transition:none;will-change:opacity,translate}[data-toi-auto-reveal][data-toi-reveal-ready]{transition:opacity 760ms cubic-bezier(.22,1,.36,1),translate 760ms cubic-bezier(.22,1,.36,1);transition-delay:var(--toi-reveal-delay,0ms)}[data-toi-auto-reveal].toi-reveal-visible{opacity:1;translate:0 0}@media(prefers-reduced-motion:reduce){[data-toi-auto-reveal]{opacity:1;translate:none;transition:none;will-change:auto}}</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></head>
 <body>
-  <section class="inv-opening-cover" id="coverScreen" tabindex="0" aria-label="Шақыртуды ашу">
+  <section class="inv-opening-cover" id="coverScreen" tabindex="0" aria-label="Шақыртуды ашу" data-toi-intro>
     <div class="inv-opening-envelope">
       <span class="inv-opening-fold inv-opening-fold--left"></span>
       <span class="inv-opening-fold inv-opening-fold--right"></span>
@@ -333,6 +333,7 @@
         if(opened) return; opened=true;
         cover.classList.add('is-opening');
         document.documentElement.classList.remove('cover-active');
+        window.dispatchEvent(new Event('toi:intro-opened'));
         setTimeout(function(){
           cover.classList.add('is-open');
           setTimeout(function(){ if(cover&&cover.parentNode) cover.parentNode.removeChild(cover); }, 300);
@@ -1701,7 +1702,7 @@
         // After opening, pause ~0.5s so the invite sits still for a beat first.
         var intro=document.querySelector('[data-toi-intro]');
         if(intro && !window.__toiIntroOpened){
-            window.addEventListener('toi:intro-opened', function(){ begin(500); }, { once:true });
+            window.addEventListener('toi:intro-opened', function(){ begin(1000); }, { once:true });
         } else {
             begin(1200);
         }
