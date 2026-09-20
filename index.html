@@ -427,7 +427,6 @@
                 <textarea class="rsvp-note" id="rNote" placeholder="Қызымызға тілегіңіз..."></textarea>
               </div>
 
-              <input id="rPhone" type="hidden" value="-">
               <input id="rGuests" type="hidden" value="1">
               <input id="rAttending" type="hidden" value="true">
 
@@ -1877,7 +1876,6 @@
             name: name,
             attendance: attendanceInput ? attendanceInput.value : '',
             guests: (document.getElementById('rGuests') || {}).value || '',
-            phone: (document.getElementById('rPhone') || {}).value || '',
             note: (document.getElementById('rNote') || {}).value || '',
             page: window.location.href
         };
