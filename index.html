@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="kk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Мадина — Қыз ұзату</title>
+  <style>
+    /* Fully local fonts (zero external requests). Display = Asylbek Shelley, body = Lora
+       (VF normal+italic), mono = DM Mono, RSVP form = TildaSans. */
+    @font-face{font-family:'Asylbek Shelley';font-display:swap;src:url('fonts/asylbek-shelley.woff2') format('woff2');}
+
+    @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/lora-normal-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}
+    @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/lora-normal-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+    @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/lora-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+    @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/lora-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+    @font-face{font-family:'Lora';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/lora-italic-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+    @font-face{font-family:'Lora';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/lora-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+    @font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/dmmono-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+    @font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/dmmono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+    @font-face{font-family:'TildaSans';font-weight:400;font-display:swap;src:url('fonts/TildaSans-Regular.woff2') format('woff2');}
+    @font-face{font-family:'TildaSans';font-weight:500;font-display:swap;src:url('fonts/TildaSans-Medium.woff2') format('woff2');}
+    @font-face{font-family:'TildaSans';font-weight:600;font-display:swap;src:url('fonts/TildaSans-Semibold.woff2') format('woff2');}
+    @font-face{font-family:'TildaSans';font-weight:700;font-display:swap;src:url('fonts/TildaSans-Bold.woff2') format('woff2');}
+
+    :root{
+      --bg:#fcf4f0;
+      --paper:rgba(252,244,240,0.45);
+      --paper-base:#fcf4f0;
+      --ink:#3a2a2c;
+      --ink-soft:#5a4244;
+      --ink-mute:#8c7274;
+      --rule:rgba(58,42,44,0.18);
+      --accent:#b8898b;
+      --primary:#3a2a2c;
+      --primary-ink:#fcf4f0;
+      --font-display:'Asylbek Shelley','Cormorant Garamond',Georgia,serif;
+      --font-body:'Lora','Cormorant Garamond',Georgia,serif;
+      --font-mono:'DM Mono',monospace;
+      --font-sans:'TildaSans',-apple-system,'Segoe UI',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-body);color:var(--ink);background:#ece0da;display:flex;justify-content:center;min-height:100vh;}
+    .page{width:100%;max-width:460px;min-height:100vh;background:var(--paper-base);position:relative;overflow:hidden;color:var(--ink);
+      box-shadow:0 0 60px rgba(42,37,32,0.18);}
+
+    /* ---------------- HERO (blossom image, bottom overlay, single name) ---------------- */
+    .hero{position:relative;width:100%;aspect-ratio:675/1200;min-height:100dvh;overflow:hidden;background:var(--paper-base);}
+    .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+      -webkit-mask-image:linear-gradient(180deg,#000 0,#000 78%,transparent 100%);
+      mask-image:linear-gradient(180deg,#000 0,#000 78%,transparent 100%);}
+    .hero-overlay{position:absolute;left:0;right:0;bottom:0;padding:0 24px 16%;text-align:center;z-index:2;}
+    .hero-eyebrow{font-family:var(--font-mono);font-size:12px;line-height:1.1;letter-spacing:0.42em;color:var(--ink-soft);text-transform:uppercase;}
+    .hero-name{margin-top:10px;font-family:var(--font-display);font-size:64px;line-height:1;color:var(--ink);}
+    .hero-date{margin-top:14px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.42em;color:var(--ink-soft);}
+
+    /* ---------------- PAINTED PAIR (blossom bg + paper veil + top/bottom fade) ---------------- */
+    .painted{position:relative;overflow:hidden;background:var(--paper-base);}
+    .painted-bg,.painted-veil{position:absolute;inset:0;width:100%;height:100%;
+      -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px,#000 calc(100% - 90px),transparent 100%);
+      mask-image:linear-gradient(180deg,transparent 0,#000 90px,#000 calc(100% - 90px),transparent 100%);}
+    .painted-bg{object-fit:cover;z-index:0;}
+    .painted-veil{background:var(--paper);z-index:1;pointer-events:none;}
+    .painted-content{position:relative;z-index:2;}
+
+    .section{position:relative;background:transparent;}
+    .sec-pad{padding:56px 28px 40px;}
+
+    /* ---------------- INVITATION + CALENDAR ---------------- */
+    .invite{text-align:center;}
+    .invite-greeting{font-family:var(--font-display);font-size:30px;color:var(--accent);margin-bottom:24px;white-space:pre-line;}
+    .invite-body{font-family:var(--font-body);font-size:14.5px;line-height:1.7;color:var(--ink-soft);max-width:320px;margin:0 auto 28px;white-space:pre-line;}
+    .invite-date{font-family:var(--font-display);font-size:38px;color:var(--ink);letter-spacing:0.02em;margin-bottom:24px;}
+    .cal{display:grid;grid-template-columns:repeat(7,1fr);row-gap:14px;column-gap:6px;font-family:var(--font-body);color:var(--ink-soft);}
+    .cal-wd{font-family:var(--font-mono);font-size:11px;letter-spacing:0.18em;text-align:center;color:var(--ink-mute);padding-bottom:8px;border-bottom:1px solid var(--rule);}
+    .cal-day{position:relative;text-align:center;font-size:16px;line-height:32px;font-family:var(--font-display);color:var(--ink-soft);}
+    .cal-day.is-event{color:var(--accent);}
+    .cal-event-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;}
+    .cal-event-wrap::before{content:'';position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--accent);
+      box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
+    .cal-event-wrap span{position:relative;font-weight:700;}
+    .invite-time{margin-top:32px;font-family:var(--font-display);font-size:28px;color:var(--ink);letter-spacing:0.18em;}
+
+    /* ---------------- LOCATION ---------------- */
+    .loc{padding:48px 24px 40px;}
+    .loc-inner{text-align:center;padding:0 24px;}
+    .loc-title{font-family:var(--font-display);letter-spacing:0.32em;font-size:26px;color:var(--ink);}
+    .loc-sub{font-family:var(--font-body);font-style:italic;font-size:16px;color:var(--ink-mute);margin-top:8px;}
+    .loc-addr{margin-top:18px;text-align:center;font-family:var(--font-body);font-size:19px;color:var(--ink-soft);line-height:1.7;}
+    .loc-addr .accent-italic{font-style:italic;}
+    .map-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:11px 26px;border:1px solid var(--rule);border-radius:999px;
+      background:transparent;color:var(--ink);text-decoration:none;font-family:var(--font-body);font-style:italic;font-size:16px;transition:border-color .15s,background-color .15s;}
+    .map-btn:hover{border-color:var(--accent);background:rgba(184,137,139,0.1);}
+
+    /* ---------------- PROGRAM / TIMING (our line icons in rings) ---------------- */
+    .timing{padding:48px 24px 32px;}
+    .timing-rows{margin-top:22px;}
+    .timing-row{display:grid;grid-template-columns:64px 28px 1fr;align-items:center;gap:14px;padding:10px 0;position:relative;}
+    .timing-icon{width:64px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:50%;
+      border:1px solid color-mix(in srgb,var(--accent) 55%,transparent);background:rgba(255,255,255,0.32);}
+    .timing-icon svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+    .timing-mid{position:relative;height:100%;display:flex;justify-content:center;}
+    .timing-mid .line{position:absolute;top:0;bottom:0;width:1px;background:var(--rule);}
+    .timing-mid .heart{position:relative;align-self:center;}
+    .timing-mid .heart svg{display:block;fill:var(--accent);}
+    .timing-time{font-family:var(--font-display);font-size:30px;line-height:1;color:var(--ink);}
+    .timing-label{font-family:var(--font-body);font-size:13px;color:var(--ink-mute);margin-top:4px;}
+
+    /* ---------------- COUNTDOWN + HOSTS ---------------- */
+    .countdown{padding:48px 24px 24px;text-align:center;}
+    .countdown-title{font-family:var(--font-display);font-size:22px;letter-spacing:0.32em;color:var(--ink);margin-bottom:22px;}
+    .count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;}
+    .count-num{font-family:var(--font-display);font-size:44px;line-height:1;color:var(--ink);}
+    .count-lbl{font-family:var(--font-body);font-size:12px;color:var(--ink-mute);margin-top:6px;font-style:italic;}
+    .countdown-note{margin-top:22px;font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);line-height:1.6;white-space:pre-line;}
+    .hosts{text-align:center;margin-top:56px;}
+    .hosts-label{font-family:var(--font-display);font-size:30px;letter-spacing:0.18em;color:var(--ink);}
+    .hosts-name{font-family:var(--font-display);font-size:30px;letter-spacing:0.18em;color:var(--ink);margin-top:4px;}
+    .hosts-note{margin-top:14px;font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);}
+
+    /* ---------------- RSVP CARD (de-cloned mauve variant) ---------------- */
+    .rsvp-wrap{margin:40px auto 8px;max-width:400px;background:rgba(255,255,255,0.6);
+      border:1px solid color-mix(in srgb,var(--accent) 32%,transparent);border-radius:22px;
+      box-shadow:0 18px 44px -20px color-mix(in srgb,var(--ink) 40%,transparent);padding:34px 26px 30px;}
+    .rsvp-form{text-align:left;max-width:330px;margin:0 auto;font-family:var(--font-sans);}
+    .rsvp-eyebrow{text-align:center;font-family:var(--font-sans);font-weight:700;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+    .rsvp-title{text-align:center;margin-bottom:24px;font-family:var(--font-display);font-weight:400;font-size:48px;color:var(--accent);line-height:1;}
+    .field-label{display:block;font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-mute);margin-bottom:8px;}
+    .rsvp-input{width:100%;padding:13px 15px;margin-bottom:2px;border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:rgba(255,255,255,0.7);color:var(--ink);
+      font-family:var(--font-sans);font-weight:500;font-size:15px;outline:none;border-radius:12px;transition:border-color .12s,box-shadow .12s;}
+    .rsvp-input::placeholder{color:var(--ink-mute);opacity:0.65;font-weight:400;}
+    .rsvp-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
+    .attend-label{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-mute);margin:22px 0 10px;}
+    .attend-list{display:flex;flex-direction:column;gap:9px;}
+    .attend-opt{display:flex;align-items:center;gap:12px;width:100%;padding:13px 15px;border:1px solid color-mix(in srgb,var(--accent) 26%,transparent);background:rgba(255,255,255,0.5);color:var(--ink);
+      font-family:var(--font-sans);font-weight:500;font-size:15px;border-radius:12px;cursor:pointer;text-align:left;transition:border-color .12s,background-color .12s;}
+    .attend-opt:has(input:checked){border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);}
+    .attend-opt input{position:absolute;opacity:0;pointer-events:none;}
+    .attend-box{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--ink-mute);flex-shrink:0;position:relative;transition:border-color .12s,background-color .12s;}
+    .attend-opt:has(input:checked) .attend-box{border-color:var(--accent);background:var(--accent);}
+    .attend-box::after{content:'';position:absolute;left:6.5px;top:3px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);opacity:0;transition:opacity .12s;}
+    .attend-opt:has(input:checked) .attend-box::after{opacity:1;}
+    .note-wrap{margin-top:20px;}
+    .rsvp-note{width:100%;min-height:80px;padding:12px 15px;border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:rgba(255,255,255,0.7);color:var(--ink);
+      font-family:var(--font-sans);font-weight:500;font-size:15px;outline:none;resize:none;border-radius:12px;transition:border-color .12s,box-shadow .12s;}
+    .rsvp-note::placeholder{color:var(--ink-mute);opacity:0.65;font-weight:400;}
+    .rsvp-note:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
+    .submit-btn{margin-top:24px;width:100%;padding:15px 0;border:0;border-radius:999px;background:var(--accent);color:#fff;
+      font-family:var(--font-sans);font-weight:700;letter-spacing:2.5px;font-size:12px;text-transform:uppercase;cursor:pointer;transition:filter .12s,transform .12s;}
+    .submit-btn:hover{filter:brightness(0.94);transform:translateY(-1px);}
+    .success-msg{display:none;text-align:center;padding:18px 6px 0;font-family:var(--font-sans);font-weight:600;font-size:17px;color:var(--accent);}
+
+    /* ---------------- WISHES ---------------- */
+    .wishes{padding:40px 24px 48px;text-align:center;}
+    .wishes-title{font-family:var(--font-display);font-size:26px;letter-spacing:0.18em;color:var(--ink);margin-bottom:12px;}
+    .wishes-text{font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);line-height:1.7;max-width:340px;margin:0 auto 18px;white-space:pre-line;}
+    .wishes-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--primary);color:var(--primary-ink);border:0;
+      font-family:var(--font-body);font-size:13px;letter-spacing:0.06em;cursor:pointer;}
+
+    /* ---------------- MUSIC BUTTON ---------------- */
+    .music-btn{position:fixed;right:18px;bottom:18px;z-index:40;width:50px;height:50px;border-radius:50%;border:1px solid var(--rule);cursor:pointer;
+      background:var(--paper-base);box-shadow:0 10px 26px rgba(42,37,32,0.22);display:flex;align-items:center;justify-content:center;}
+    .music-btn .play{width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;border-color:transparent transparent transparent var(--accent);margin-left:3px;}
+    .music-btn.is-playing .play{width:12px;height:13px;border:none;margin:0;background:linear-gradient(90deg,var(--accent) 0 3.5px,transparent 3.5px 8px,var(--accent) 8px 13px);}
+    @media (min-width:481px){.music-btn{right:calc(50% - 212px);}}
+
+    /* ---------------- COVER SCREEN (envelope intro) ---------------- */
+    html.cover-active,html.cover-active body{overflow:hidden;height:100%;}
+
+    .inv-opening-cover{
+      --inv-opening-paper: var(--paper-base);
+      --inv-opening-crease: rgba(58,42,44,0.16);
+      --inv-opening-crease-soft: rgba(58,42,44,0.09);
+      --inv-opening-tint: rgba(184,137,139,0.16);
+      --inv-opening-ink: var(--ink);
+      --inv-opening-seal: var(--accent);
+      --inv-opening-seal-edge: #8c5b5d;
+      --inv-opening-duration: 1300ms;
+      position:fixed;inset:0;z-index:3000;display:grid;place-items:center;min-height:100svh;
+      overflow:hidden;isolation:isolate;cursor:pointer;background:var(--paper-base);color:var(--inv-opening-ink);
+      touch-action:manipulation;perspective:1400px;transition:opacity 160ms linear,visibility 160ms linear;
+    }
+    .inv-opening-cover.is-open{visibility:hidden;opacity:0;pointer-events:none;}
+    .inv-opening-envelope{position:absolute;inset:0;display:grid;place-items:center;min-height:100%;transform-origin:center center;}
+    .inv-opening-fold{position:absolute;inset:0;z-index:2;pointer-events:none;backface-visibility:hidden;}
+    .inv-opening-fold--left{
+      inset:0 50% 0 0;
+      background:
+        linear-gradient(42deg,transparent 49.45%,var(--inv-opening-crease) 50%,transparent 50.65%),
+        linear-gradient(138deg,transparent 49.45%,var(--inv-opening-crease-soft) 50%,transparent 50.65%),
+        linear-gradient(90deg,var(--inv-opening-tint),transparent),
+        var(--inv-opening-paper);
+      box-shadow:12px 0 26px rgba(58,42,44,0.06);
+      transform-origin:right center;
+    }
+    .inv-opening-fold--right{
+      inset:0 0 0 50%;
+      background:
+        linear-gradient(318deg,transparent 49.45%,var(--inv-opening-crease) 50%,transparent 50.65%),
+        linear-gradient(222deg,transparent 49.45%,var(--inv-opening-crease-soft) 50%,transparent 50.65%),
+        linear-gradient(270deg,var(--inv-opening-tint),transparent),
+        var(--inv-opening-paper);
+      box-shadow:-12px 0 26px rgba(58,42,44,0.05);
+      transform-origin:left center;
+    }
+    .inv-opening-fold--flap{
+      z-index:3;inset:0 0 44%;
+      background:
+        linear-gradient(135deg,transparent 49.4%,var(--inv-opening-crease) 50%,transparent 50.7%),
+        linear-gradient(225deg,transparent 49.4%,var(--inv-opening-crease) 50%,transparent 50.7%),
+        var(--inv-opening-paper);
+      clip-path:polygon(0 0,100% 0,50% 100%);
+      filter:drop-shadow(0 14px 12px rgba(58,42,44,0.14));
+      transform-origin:top center;transform-style:preserve-3d;
+    }
+    .inv-opening-copy{
+      position:relative;z-index:4;display:grid;gap:clamp(10px,2.4vh,18px);width:min(78vw,340px);
+      margin-top:clamp(-220px,-28vh,-150px);text-align:center;text-wrap:balance;pointer-events:none;
+    }
+    .inv-opening-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:0.42em;color:var(--ink-soft);text-transform:uppercase;}
+    .inv-opening-title{margin:0;font-family:var(--font-display);font-weight:400;line-height:1;letter-spacing:0;
+      font-size:clamp(46px,11vw,68px);color:var(--ink);text-shadow:0 2px 18px rgba(58,42,44,0.1);}
+    .inv-opening-subtitle{margin:0;font-family:var(--font-mono);font-size:12px;letter-spacing:0.42em;color:var(--ink-soft);text-transform:uppercase;}
+    .inv-opening-seal{
+      position:absolute;z-index:5;left:50%;top:56%;display:grid;width:clamp(104px,26vw,124px);aspect-ratio:1;
+      margin:0;padding:12px;place-items:center;border:3px double var(--inv-opening-seal-edge);
+      border-radius:47% 53% 49% 51% / 54% 46% 54% 46%;
+      box-shadow:
+        inset 0 0 0 2px rgba(255,255,255,0.5),
+        inset -10px -12px 22px rgba(140,91,93,0.28),
+        inset 10px 10px 18px rgba(255,255,255,0.4),
+        0 18px 28px rgba(58,42,44,0.24);
+      background:
+        radial-gradient(circle at 34% 28%,rgba(255,255,255,0.7),transparent 34%),
+        radial-gradient(circle at 70% 74%,rgba(140,91,93,0.22),transparent 36%),
+        var(--inv-opening-seal);
+      color:#fff9f6;font:500 clamp(12px,3.2vw,15px)/1 var(--font-mono),sans-serif;letter-spacing:0.04em;
+      text-transform:uppercase;transform:translate(-50%,-50%) rotate(-2deg);
+      transition:transform 320ms ease,filter 320ms ease;pointer-events:auto;cursor:pointer;
+    }
+    .inv-opening-seal:hover,.inv-opening-seal:focus-visible{
+      filter:brightness(1.05);transform:translate(-50%,-50%) rotate(1deg) scale(1.03);
+      outline:2px solid rgba(255,255,255,0.8);outline-offset:5px;
+    }
+    .inv-opening-cover.is-opening .inv-opening-seal{animation:invOpeningSealRelease var(--inv-opening-duration) ease-in both;}
+    .inv-opening-cover.is-opening .inv-opening-copy{animation:invOpeningInkQuiet var(--inv-opening-duration) ease-in both;}
+    .inv-opening-cover.is-opening .inv-opening-fold--flap{animation:invOpeningFlapNatural var(--inv-opening-duration) cubic-bezier(0.22,1,0.36,1) both;}
+    .inv-opening-cover.is-opening .inv-opening-fold--left{animation:invOpeningLeftPanelSlide var(--inv-opening-duration) cubic-bezier(0.22,1,0.36,1) both;}
+    .inv-opening-cover.is-opening .inv-opening-fold--right{animation:invOpeningRightPanelSlide var(--inv-opening-duration) cubic-bezier(0.22,1,0.36,1) both;}
+    @keyframes invOpeningSealRelease{
+      0%,9%{opacity:1;transform:translate(-50%,-50%) rotate(-2deg) scale(1);}
+      19%{opacity:1;transform:translate(-50%,-50%) rotate(4deg) scale(1.035);}
+      36%{opacity:0;transform:translate(-50%,-80%) rotate(14deg) scale(0.72);}
+      100%{opacity:0;transform:translate(-50%,-92%) rotate(14deg) scale(0.72);}
+    }
+    @keyframes invOpeningInkQuiet{
+      0%,18%{opacity:1;transform:translateY(0);}
+      38%,100%{opacity:0;transform:translateY(-16px);}
+    }
+    @keyframes invOpeningFlapNatural{
+      0%,20%{opacity:1;transform:translateY(0);}
+      48%{opacity:0.72;transform:translateY(-1.2%);}
+      72%,100%{opacity:0;transform:translateY(-2.5%);}
+    }
+    @keyframes invOpeningLeftPanelSlide{
+      0%,29%{transform:translateX(0);}
+      58%{transform:translateX(-8%);}
+      100%{transform:translateX(-104%);}
+    }
+    @keyframes invOpeningRightPanelSlide{
+      0%,29%{transform:translateX(0);}
+      58%{transform:translateX(8%);}
+      100%{transform:translateX(104%);}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .inv-opening-cover.is-opening .inv-opening-seal,
+      .inv-opening-cover.is-opening .inv-opening-copy,
+      .inv-opening-cover.is-opening .inv-opening-fold--flap,
+      .inv-opening-cover.is-opening .inv-opening-fold--left,
+      .inv-opening-cover.is-opening .inv-opening-fold--right{animation-duration:1ms;}
+    }
+  </style>
+<script>window.__INVITE_V3 = {"doc":{"version":3,"event":{"date":"2026-10-23T18:00"},"media":{"cover":null,"coverPos":null,"coverZoom":null,"gallery":[],"music":null},"location":{"url":""},"theme":{},"blocks":{"hero-name":{"runs":[{"text":"Мадина"}]},"invite-body":{"runs":[{"text":"Туыс-туғандарымыз, аға-жеңгелеріміз, құда-құдағилар, дос-жарандарымыз бен әріптестер! Сіздерді қымбатты қызымыз Мадинаны ата-анасының аялы алақанынан бақытты отбасылық өмірге аттандыратын қуанышты да толғандырарлық сәтімізге құрметті қонақ болуға шақырамыз!"}]},"owners-name":{"runs":[{"text":"Әлия & Болат"}]},"location-address":{"runs":[{"text":"«Керемет» мейрамханасы"}]}},"inserts":[],"lists":{}},"lang":"kk"};</script><link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700;800&amp;family=DM+Serif+Display&amp;family=Lora:wght@400;500;600;700&amp;family=Marcellus&amp;family=Inter:wght@300;400;500;600;700&amp;family=Jost:wght@300;400;500;600;700&amp;family=Outfit:wght@300;400;500;600;700;800&amp;family=Nunito:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;family=Didact+Gothic&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Golos+Text:wght@400;500;600;700;800;900&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tenor+Sans&amp;family=Yeseva+One&amp;display=swap">
+
+<script>window.__TOI_AUTOSCROLL_SPEED = 60;</script><style id="__v3-scroll-reveal">[data-toi-auto-reveal]{opacity:0;translate:0 30px;transition:none;will-change:opacity,translate}[data-toi-auto-reveal][data-toi-reveal-ready]{transition:opacity 760ms cubic-bezier(.22,1,.36,1),translate 760ms cubic-bezier(.22,1,.36,1);transition-delay:var(--toi-reveal-delay,0ms)}[data-toi-auto-reveal].toi-reveal-visible{opacity:1;translate:0 0}@media(prefers-reduced-motion:reduce){[data-toi-auto-reveal]{opacity:1;translate:none;transition:none;will-change:auto}}</style></head>
+<body>
+  <section class="inv-opening-cover" id="coverScreen" tabindex="0" aria-label="Шақыртуды ашу">
+    <div class="inv-opening-envelope">
+      <span class="inv-opening-fold inv-opening-fold--left"></span>
+      <span class="inv-opening-fold inv-opening-fold--right"></span>
+      <span class="inv-opening-fold inv-opening-fold--flap"></span>
+      <div class="inv-opening-copy">
+        <p class="inv-opening-eyebrow">Қыз ұзату той</p>
+        <p class="inv-opening-title">Мадина</p>
+        <p class="inv-opening-subtitle">Шақыртуды ашу</p>
+      </div>
+      <button type="button" class="inv-opening-seal" id="coverOpenBtn">Ашу</button>
+    </div>
+  </section>
+  <script>
+    document.documentElement.classList.add('cover-active');
+    (function(){
+      var cover=document.getElementById('coverScreen'),btn=document.getElementById('coverOpenBtn');
+      if(!cover||!btn) return;
+      var duration=parseInt(getComputedStyle(cover).getPropertyValue('--inv-opening-duration'),10)||1300;
+      var opened=false;
+      function openCover(){
+        if(opened) return; opened=true;
+        cover.classList.add('is-opening');
+        document.documentElement.classList.remove('cover-active');
+        setTimeout(function(){
+          cover.classList.add('is-open');
+          setTimeout(function(){ if(cover&&cover.parentNode) cover.parentNode.removeChild(cover); }, 300);
+        }, duration);
+      }
+      btn.addEventListener('click', function(ev){ ev.stopPropagation(); openCover(); });
+      cover.addEventListener('click', openCover);
+      cover.addEventListener('keydown', function(ev){ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); openCover(); } });
+    })();
+  </script>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero toi-reveal-visible template-reveal-in" data-block="hero" data-edit-id="sec-hero" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+      <img class="hero-img" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-1.webp" alt="" aria-hidden="true" decoding="async">
+      <div class="hero-overlay">
+        <div class="hero-eyebrow" id="heroEyebrow" data-edit-id="hero-eyebrow" data-kk="Қыз ұзату" data-ru="Қыз ұзату" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Қыз ұзату</div>
+        <div class="hero-name" id="heroName" data-edit-id="hero-name" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Мадина</div>
+        <div class="hero-date" id="heroDate" data-bind="date" data-fmt="DD . MM . YYYY" data-edit-id="bound-date-heroDate" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">23 . 10 . 2026</div>
+      </div>
+    </section>
+
+    <!-- PAINTED PAIR 1: invitation + calendar + location -->
+    <div class="painted">
+      <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section sec-pad invite" data-block="invite" data-edit-id="sec-invite" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="invite-greeting toi-reveal-visible template-reveal-in" id="inviteGreeting" data-edit-id="invite-greeting" data-kk="Құрметті қонақтар!" data-ru="Дорогие гости!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Құрметті қонақтар!</div>
+          <div class="invite-body toi-reveal-visible template-reveal-in" id="inviteBody" data-edit-id="invite-body" data-kk="Сіздерді қызымыздың ұзату тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-ru="Сіздерді қызымыздың ұзату тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Туыс-туғандарымыз, аға-жеңгелеріміз, құда-құдағилар, дос-жарандарымыз бен әріптестер! Сіздерді қымбатты қызымыз Мадинаны ата-анасының аялы алақанынан бақытты отбасылық өмірге аттандыратын қуанышты да толғандырарлық сәтімізге құрметті қонақ болуға шақырамыз!</div>
+          <div class="invite-date toi-reveal-visible template-reveal-in" id="inviteBigDate" data-bind="date" data-fmt="D MMMM YYYY" data-edit-id="bound-date-inviteBigDate" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">23 Қазан 2026</div>
+          <div class="cal toi-reveal-visible template-reveal-in" id="calendar" aria-hidden="true" data-bind="calendar" data-v3-flow-anchor-id="bound-calendar-calendar" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 255ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true"><template data-cal-weekday=""></template><template data-cal-day=""></template><template data-cal-event=""><div class="cal-day is-event"><span class="cal-event-wrap"><span data-cal-num=""></span></span></div></template><div class="cal-wd" data-cal-num="">дс</div><div class="cal-wd" data-cal-num="">сс</div><div class="cal-wd" data-cal-num="">ср</div><div class="cal-wd" data-cal-num="">бс</div><div class="cal-wd" data-cal-num="">жм</div><div class="cal-wd" data-cal-num="">сн</div><div class="cal-wd" data-cal-num="">жс</div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day"></div><div class="cal-day" data-cal-num="">1</div><div class="cal-day" data-cal-num="">2</div><div class="cal-day" data-cal-num="">3</div><div class="cal-day" data-cal-num="">4</div><div class="cal-day" data-cal-num="">5</div><div class="cal-day" data-cal-num="">6</div><div class="cal-day" data-cal-num="">7</div><div class="cal-day" data-cal-num="">8</div><div class="cal-day" data-cal-num="">9</div><div class="cal-day" data-cal-num="">10</div><div class="cal-day" data-cal-num="">11</div><div class="cal-day" data-cal-num="">12</div><div class="cal-day" data-cal-num="">13</div><div class="cal-day" data-cal-num="">14</div><div class="cal-day is-event"><span class="cal-event-wrap"><span data-cal-num="">15</span></span></div><div class="cal-day" data-cal-num="">16</div><div class="cal-day" data-cal-num="">17</div><div class="cal-day" data-cal-num="">18</div><div class="cal-day" data-cal-num="">19</div><div class="cal-day" data-cal-num="">20</div><div class="cal-day" data-cal-num="">21</div><div class="cal-day" data-cal-num="">22</div><div class="cal-day" data-cal-num="">23</div><div class="cal-day" data-cal-num="">24</div><div class="cal-day" data-cal-num="">25</div><div class="cal-day" data-cal-num="">26</div><div class="cal-day" data-cal-num="">27</div><div class="cal-day" data-cal-num="">28</div><div class="cal-day" data-cal-num="">29</div><div class="cal-day" data-cal-num="">30</div><div class="cal-day" data-cal-num="">31</div></div>
+          <div class="invite-time toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 340ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true"><span id="timePrefix" data-edit-id="time-prefix" data-kk="Сағат" data-ru="Время" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Сағат</span> <span id="eventTimeMirror" data-bind="date" data-fmt="HH:mm" data-edit-id="bound-date-eventTimeMirror" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">18:00</span></div>
+        </section>
+
+        <section class="section loc" data-block="location" data-edit-id="sec-location" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="loc-inner toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div class="loc-title" id="locationTitle" data-edit-id="location-title" data-kk="Мекен-жай" data-ru="Адрес" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Мекен-жай</div>
+            <div class="loc-sub" id="locationSub" data-edit-id="location-sub" data-kk="Той орны" data-ru="Место проведения" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Той орны</div>
+          </div>
+          <div class="loc-addr toi-reveal-visible template-reveal-in" id="locationAddress" data-edit-id="location-address" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">«Керемет» мейрамханасы</div>
+          <div style="text-align: center; --toi-reveal-delay: 170ms;" data-toi-auto-reveal="" data-toi-reveal-delay="true" data-toi-reveal-ready="true" data-toi-reveal-observed="true" class="toi-reveal-visible template-reveal-in" data-toi-reveal-shown="true">
+            <a class="map-btn" id="mapBtn" href="https://toi.com.kz/invite/new-live?template=uzatu%2Ftemplate20.html#" target="_blank" rel="noopener noreferrer" data-bind="map" data-v3-flow-anchor-id="bound-map-mapBtn" style="pointer-events: auto;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span id="mapBtnLabel" data-edit-id="map-label" data-kk="Картадан ашу" data-ru="Открыть карту" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Картадан ашу</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 2: dress code -->
+    <div class="painted">
+      <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section dresscode" data-block="dresscode" data-edit-id="sec-dresscode" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="loc-inner toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div class="loc-title" id="dresscodeTitle" data-edit-id="dresscode-title" data-kk="Дресс-код" data-ru="Дресс-код" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Дресс-код</div>
+            <div class="loc-sub" id="dresscodeSub" data-edit-id="dresscode-sub" data-kk="Киім талғамы" data-ru="Пожелание по стилю" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Киім талғамы</div>
+          </div>
+          <div class="invite-body toi-reveal-visible template-reveal-in" id="dresscodeBody" data-edit-id="dresscode-body" data-kk="Құрметті қонақтар, мерекелік кешімізге көрікті әрі салтанатты киіммен келулеріңізді сұраймыз." data-ru="Дорогие гости, просим прийти на торжество в красивой и нарядной одежде." data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Құрметті қонақтар, мерекелік кешімізге көрікті әрі салтанатты киіммен келулеріңізді сұраймыз.</div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 3: countdown + hosts + RSVP -->
+    <div class="painted">
+      <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section countdown" data-block="countdown" data-edit-id="sec-countdown" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="countdown-title toi-reveal-visible template-reveal-in" id="countdownTitle" data-edit-id="countdown-title" data-kk="Тойға дейін:" data-ru="До торжества:" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Тойға дейін:</div>
+          <div class="count-grid toi-reveal-visible template-reveal-in" aria-live="polite" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div><div class="count-num" id="countDays" data-bind="countdown.days">237</div><div class="count-lbl" id="daysLabel" data-edit-id="label-days" data-kk="күн" data-ru="дней" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">күн</div></div>
+            <div><div class="count-num" id="countHours" data-bind="countdown.hours">20</div><div class="count-lbl" id="hoursLabel" data-edit-id="label-hours" data-kk="сағат" data-ru="часов" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">сағат</div></div>
+            <div><div class="count-num" id="countMinutes" data-bind="countdown.minutes">22</div><div class="count-lbl" id="minutesLabel" data-edit-id="label-minutes" data-kk="минут" data-ru="минут" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">минут</div></div>
+            <div><div class="count-num" id="countSeconds" data-bind="countdown.seconds">05</div><div class="count-lbl" id="secondsLabel" data-edit-id="label-seconds" data-kk="секунд" data-ru="секунд" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">секунд</div></div>
+          </div>
+          <div class="countdown-note toi-reveal-visible template-reveal-in" id="countdownNote" data-edit-id="countdown-note" data-kk="Тойға келуіңізді растауыңызды сұраймыз!" data-ru="Просим подтвердить ваше присутствие!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Тойға келуіңізді растауыңызды сұраймыз!</div>
+
+          <div class="hosts toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 255ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div class="hosts-label" id="hostsLabel" data-edit-id="hosts-label" data-kk="Той иелері:" data-ru="Хозяева торжества:" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Той иелері:</div>
+            <div class="hosts-name" id="ownersBigName" data-edit-id="owners-name" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Әлия &amp; Болат</div>
+            <div class="hosts-note" id="hostsNote" data-edit-id="hosts-note" data-kk="Сіздерді тойымызда күтеміз!" data-ru="Будем рады видеть вас!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Сіздерді тойымызда күтеміз!</div>
+          </div>
+
+          <div class="rsvp-wrap toi-reveal-visible template-reveal-in" data-block="rsvp" data-edit-id="sec-rsvp" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 340ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <form class="rsvp-form" id="rsvpForm">
+              <div class="rsvp-eyebrow" aria-hidden="true">RSVP</div>
+              <div class="rsvp-title" id="rsvpTitle" data-edit-id="rsvp-title" data-kk="Анкета" data-ru="Анкета" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Анкета</div>
+              <label class="field-label" for="rName" id="nameLabel" data-edit-id="rsvp-name-label" data-kk="Аты-жөніңіз" data-ru="Имя и фамилия" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Аты-жөніңіз</label>
+              <input class="rsvp-input" id="rName" type="text" autocomplete="name" placeholder="Аты-жөніңіз">
+
+              <div class="attend-label" id="attendanceTitle" data-edit-id="rsvp-attendance-title" data-kk="Келесіз бе?" data-ru="Придёте?" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Келесіз бе?</div>
+              <div class="attend-list">
+                <label class="attend-opt"><input type="radio" name="attendance" value="yes" checked=""><span class="attend-box" aria-hidden="true"></span><span id="attendanceYesText" data-edit-id="rsvp-attendance-yes" data-kk="Иә, әрине" data-ru="Да, конечно" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Иә, әрине</span></label>
+                <label class="attend-opt"><input type="radio" name="attendance" value="pair"><span class="attend-box" aria-hidden="true"></span><span id="attendancePairText" data-edit-id="rsvp-attendance-pair" data-kk="Жұбайыммен келемін" data-ru="Приду с парой" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Жұбайыммен келемін</span></label>
+                <label class="attend-opt"><input type="radio" name="attendance" value="no"><span class="attend-box" aria-hidden="true"></span><span id="attendanceNoText" data-edit-id="rsvp-attendance-no" data-kk="Келе алмаймын" data-ru="Не смогу прийти" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Келе алмаймын</span></label>
+              </div>
+
+              <div class="note-wrap" id="noteWrap" style="display:none">
+                <label class="field-label" for="rNote" id="noteLabel" data-edit-id="rsvp-note-label" data-kk="Тілек қалдырыңыз" data-ru="Оставьте пожелание" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Тілек қалдырыңыз</label>
+                <textarea class="rsvp-note" id="rNote" placeholder="Қызымызға тілегіңіз..."></textarea>
+              </div>
+
+              <input id="rPhone" type="hidden" value="-">
+              <input id="rGuests" type="hidden" value="1">
+              <input id="rAttending" type="hidden" value="true">
+
+              <button class="submit-btn" id="rsvpSubmitBtn" data-edit-id="rsvp-submit" type="submit" data-kk="Жіберу" data-ru="Отправить" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Жіберу</button>
+            </form>
+            <div class="success-msg" id="successMsg" data-edit-id="rsvp-success" data-kk="Рақмет! Жауабыңыз сақталды." data-ru="Спасибо! Ваш ответ сохранён." data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Рақмет! Жауабыңыз сақталды.</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 4: wishes -->
+    <div class="painted">
+      <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section wishes" data-block="wishes" data-edit-id="sec-wishes" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="wishes-title toi-reveal-visible template-reveal-in" id="wishesTitle" data-edit-id="wishes-title" data-kk="Тілектер" data-ru="Пожелания" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Тілектер</div>
+          <div class="wishes-text toi-reveal-visible template-reveal-in" id="wishesText" data-edit-id="wishes-text" data-kk="Қызымызға ақ бата, жас жұбайларға жылы лебіз қалдырыңыз." data-ru="Қызымызға ақ бата, жас жұбайларға жылы лебіз қалдырыңыз." data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Қызымызға ақ бата, жас жұбайларға жылы лебіз қалдырыңыз.</div>
+          <button class="wishes-btn toi-reveal-visible template-reveal-in" id="wishesBtn" type="button" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3 7 12 13 21 7"></polyline></svg>
+            <span id="wishesBtnLabel" data-edit-id="wishes-btn-label" data-kk="Тілек қалдыру" data-ru="Оставить пожелание" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Тілек қалдыру</span>
+          </button>
+        </section>
+
+      </div>
+    </div>
+
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Music" title="Music" style="display: none;"><span class="play" aria-hidden="true"></span></button>
+    <audio id="audioEl" preload="none" data-bind="music"></audio>
+  </main>
+
+  
+
+<script>
+(function(){
+    if (window.__APPLY_INVITE_V3) return;
+
+    /* v3 strips template scripts, including their scroll-reveal observers. Keep
+       that behaviour in this shared renderer so every template gets the same
+       entrance motion without carrying a private script. */
+    var REVEAL_EXPLICIT_SELECTOR='[data-reveal],.reveal,.rv';
+    var PAGE_BUILDER_REVEAL_SELECTOR='main [data-component-id]:not([data-type="shape"]):not([data-type="audio-fixed"]):not([data-type="fixed-wishes"])';
+    var REVEAL_BLOCK_SELECTOR='section,footer,.photo-strip,.divider-row,.orn-divider,.site-footer,'+PAGE_BUILDER_REVEAL_SELECTOR;
+    var revealObserver=null;
+    try {
+        var rfx=document.createElement('style');
+        rfx.id='__v3-scroll-reveal';
+        rfx.textContent='[data-toi-auto-reveal]{opacity:0;translate:0 30px;transition:none;will-change:opacity,translate}[data-toi-auto-reveal][data-toi-reveal-ready]{transition:opacity 760ms cubic-bezier(.22,1,.36,1),translate 760ms cubic-bezier(.22,1,.36,1);transition-delay:var(--toi-reveal-delay,0ms)}[data-toi-auto-reveal].toi-reveal-visible{opacity:1;translate:0 0}@media(prefers-reduced-motion:reduce){[data-toi-auto-reveal]{opacity:1;translate:none;transition:none;will-change:auto}}';
+        (document.head||document.documentElement).appendChild(rfx);
+    } catch(_){}
+
+    function revealReducedMotion(){
+        try { return !!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
+        catch(_){ return false; }
+    }
+    function revealMatches(el,selector){
+        try { return !!(el&&el.nodeType===1&&el.matches&&el.matches(selector)); }
+        catch(_){ return false; }
+    }
+    function revealExcluded(el){
+        if(!el||el.nodeType!==1||revealMatches(el,'script,style,link,meta,noscript,template,audio')) return true;
+        var marker=(String(el.className||'')+' '+String(el.id||'')).toLowerCase();
+        var pageBuilderBlock=revealMatches(el,PAGE_BUILDER_REVEAL_SELECTOR);
+        if(/(overlay|ornament|watermark|glow|orbit|gradient|ambient|border-strip|divider-line|corner-orn|date-corner|music|scroll-line|sparkle|confetti)/.test(marker)) return true;
+        try {
+            var css=window.getComputedStyle(el);
+            if(css.display==='none'||css.visibility==='hidden'||css.contentVisibility==='hidden') return true;
+            if((css.position==='absolute'||css.position==='fixed')&&!pageBuilderBlock&&!revealMatches(el,'.hero-content,.hero-text,.hero-copy,.hero__content')) return true;
+        } catch(_){}
+        return false;
+    }
+    function revealShow(el){
+        if(!el||el.nodeType!==1) return;
+        el.classList.add('toi-reveal-visible');
+        el.classList.add('template-reveal-in');
+        if(revealMatches(el,REVEAL_EXPLICIT_SELECTOR)||el.hasAttribute('data-reveal')){
+            el.classList.add('visible');
+            el.classList.add('is-visible');
+        }
+        if(el.classList.contains('rv')) el.classList.add('in');
+        el.setAttribute('data-toi-reveal-shown','true');
+        if(revealObserver) try { revealObserver.unobserve(el); } catch(_){}
+    }
+    function revealGetObserver(){
+        if(revealObserver) return revealObserver;
+        if(!('IntersectionObserver' in window)) return null;
+        revealObserver=new IntersectionObserver(function(entries){
+            for(var i=0;i<entries.length;i++) if(entries[i].isIntersecting) revealShow(entries[i].target);
+        },{threshold:.12,rootMargin:'0px 0px -7% 0px'});
+        return revealObserver;
+    }
+    function revealObserve(el){
+        var observer=revealGetObserver();
+        if(!observer){ revealShow(el); return; }
+        if(el.getAttribute('data-toi-reveal-observed')==='true') return;
+        el.setAttribute('data-toi-reveal-observed','true');
+        observer.observe(el);
+    }
+    function revealBind(el,delay,auto){
+        if(revealExcluded(el)) return;
+        if(auto){
+            el.setAttribute('data-toi-auto-reveal','');
+            if(!el.hasAttribute('data-toi-reveal-delay')){
+                el.style.setProperty('--toi-reveal-delay',String(Math.max(0,delay||0))+'ms');
+                el.setAttribute('data-toi-reveal-delay','true');
+            }
+        }
+        if(el.getAttribute('data-toi-reveal-shown')==='true') return;
+        if(revealReducedMotion()){ revealShow(el); return; }
+        if(!('IntersectionObserver' in window)){ revealShow(el); return; }
+        if(auto&&!el.hasAttribute('data-toi-reveal-ready')){
+            if(el.hasAttribute('data-toi-reveal-scheduled')) return;
+            el.setAttribute('data-toi-reveal-scheduled','true');
+            var arm=function(){
+                el.removeAttribute('data-toi-reveal-scheduled');
+                el.setAttribute('data-toi-reveal-ready','true');
+                revealObserve(el);
+            };
+            if(window.requestAnimationFrame){
+                window.requestAnimationFrame(function(){ window.requestAnimationFrame(arm); });
+            } else {
+                window.setTimeout(arm,32);
+            }
+            return;
+        }
+        revealObserve(el);
+    }
+    function revealChildren(block){
+        var children=[];
+        try { children=Array.prototype.slice.call(block.children||[]); } catch(_){}
+        children=children.filter(function(el){
+            return !revealExcluded(el)&&!revealMatches(el,REVEAL_EXPLICIT_SELECTOR)&&!el.querySelector(REVEAL_EXPLICIT_SELECTOR);
+        });
+        if(children.length===1&&children[0].children&&children[0].children.length>1){
+            var nested=Array.prototype.slice.call(children[0].children).filter(function(el){
+                return !revealExcluded(el)&&!revealMatches(el,REVEAL_EXPLICIT_SELECTOR)&&!el.querySelector(REVEAL_EXPLICIT_SELECTOR);
+            });
+            if(nested.length>=2&&nested.length<=7) children=nested;
+        }
+        return children.length<=7?children:[];
+    }
+    function refreshScrollReveals(){
+        var explicit=[];
+        try { explicit=Array.prototype.slice.call(document.querySelectorAll(REVEAL_EXPLICIT_SELECTOR)); } catch(_){}
+        explicit.forEach(function(el){ revealBind(el,0,false); });
+
+        var blocks=[];
+        try { blocks=Array.prototype.slice.call(document.querySelectorAll(REVEAL_BLOCK_SELECTOR)); } catch(_){}
+        blocks.forEach(function(block){
+            if(revealExcluded(block)||revealMatches(block,REVEAL_EXPLICIT_SELECTOR)||block.querySelector(REVEAL_EXPLICIT_SELECTOR)) return;
+            var targets=revealChildren(block);
+            if(!targets.length){ revealBind(block,0,true); return; }
+            targets.forEach(function(el,index){ revealBind(el,Math.min(index,4)*85,true); });
+        });
+    }
+    /* Render-time href guard — verbatim mirror of safeHref() in overridesSchema.js
+       (the iframe can't import modules). Blocks javascript:/data:/etc. at the sink. */
+    function safeHref(value){
+        var url=String(value==null?'':value).trim();
+        if(!url||url.length>=2000) return '';
+        if(/^(https?:|tel:|mailto:|tg:|geo:)/i.test(url)) return url;
+        if(url.slice(0,2)==='//') return 'https:'+url;
+        if(/^[\w-]+(\.[\w-]+)+([/?#].*)?$/i.test(url)) return 'https://'+url;
+        return '';
+    }
+
+    /* ===== pure core — MIRROR of renderV3Core.js (keep in sync) ===== */
+    var LOCALE = {
+        kk: {
+            months: ['Қаңтар','Ақпан','Наурыз','Сәуір','Мамыр','Маусым','Шілде','Тамыз','Қыркүйек','Қазан','Қараша','Желтоқсан'],
+            monthsNom: ['Қаңтар','Ақпан','Наурыз','Сәуір','Мамыр','Маусым','Шілде','Тамыз','Қыркүйек','Қазан','Қараша','Желтоқсан'],
+            weekdaysShort: ['дс','сс','ср','бс','жм','сн','жс'],
+            weekdaysLong: ['Жексенбі','Дүйсенбі','Сейсенбі','Сәрсенбі','Бейсенбі','Жұма','Сенбі']
+        },
+        ru: {
+            months: ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
+            monthsNom: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+            weekdaysShort: ['пн','вт','ср','чт','пт','сб','вс'],
+            weekdaysLong: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота']
+        }
+    };
+    function normalizeLang(l){ return String(l||'').toLowerCase()==='ru'?'ru':'kk'; }
+    function pad2(v){ return String(v).padStart(2,'0'); }
+    function parseEventDate(iso){
+        var raw=String(iso||'').trim(); if(!raw) return null;
+        var m=raw.match(/^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?$/);
+        if(m){ var d=new Date(+m[1],+m[2]-1,+m[3],+(m[4]||0),+(m[5]||0),+(m[6]||0)); return isNaN(d.getTime())?null:d; }
+        var f=new Date(raw); return isNaN(f.getTime())?null:f;
+    }
+    function formatDate(date, fmt, lang){
+        if(!(date instanceof Date)||isNaN(date.getTime())) return '';
+        var L=LOCALE[normalizeLang(lang)];
+        var map={ YYYY:String(date.getFullYear()), YY:pad2(date.getFullYear()%100),
+            MMMMn:L.monthsNom[date.getMonth()]||'', MMMM:L.months[date.getMonth()]||'',
+            MM:pad2(date.getMonth()+1), M:String(date.getMonth()+1),
+            DD:pad2(date.getDate()), D:String(date.getDate()),
+            WD:(L.weekdaysLong||[])[date.getDay()]||'',
+            HH:pad2(date.getHours()), mm:pad2(date.getMinutes()) };
+        return String(fmt||'').replace(/YYYY|MMMMn|MMMM|WD|YY|MM|DD|HH|mm|M|D/g, function(t){ return map[t]; });
+    }
+    function calendarModel(date, lang){
+        if(!(date instanceof Date)||isNaN(date.getTime())) return null;
+        var L=LOCALE[normalizeLang(lang)];
+        var y=date.getFullYear(), mo=date.getMonth(), ev=date.getDate();
+        var total=new Date(y,mo+1,0).getDate();
+        var offset=(new Date(y,mo,1).getDay()+6)%7;
+        var cells=[]; var i;
+        for(i=0;i<offset;i++) cells.push({empty:true});
+        for(var d=1;d<=total;d++) cells.push({day:d,isEvent:d===ev});
+        return { weekdays:L.weekdaysShort.slice(), cells:cells };
+    }
+    function dateStripModel(date, lang, kind, span){
+        if(!(date instanceof Date)||isNaN(date.getTime())) return null;
+        var L=LOCALE[normalizeLang(lang)];
+        var n=Math.max(0,Math.floor(Number(span))||0); var cells=[];
+        for(var off=-n; off<=n; off++){ var d=new Date(date.getTime()); d.setDate(date.getDate()+off);
+            var value=kind==='weekdays'?(L.weekdaysLong[d.getDay()]||''):String(d.getDate());
+            cells.push({offset:off,dist:Math.abs(off),value:value,day:String(d.getDate()),weekday:(L.weekdaysLong[d.getDay()]||''),isCenter:off===0}); }
+        return { kind:kind==='weekdays'?'weekdays':'days', cells:cells };
+    }
+    function countdownParts(targetMs, nowMs){
+        var t=Math.max(0,Math.floor((Number(targetMs)-Number(nowMs))/1000));
+        return { days:pad2(Math.floor(t/86400)), hours:pad2(Math.floor((t%86400)/3600)),
+            minutes:pad2(Math.floor((t%3600)/60)), seconds:pad2(t%60), done:t===0 };
+    }
+
+    /* ===== DOM helpers (mirror injectDocRender runs->DOM) ===== */
+    var CSS_PROP={ fontFamily:'font-family', fontWeight:'font-weight', fontSize:'font-size',
+        fontStyle:'font-style', color:'color', textAlign:'text-align', backgroundColor:'background',
+        lineHeight:'line-height', letterSpacing:'letter-spacing',
+        marginTop:'margin-top', marginBottom:'margin-bottom' };
+    var BLOCK_PROPS=['fontFamily','fontWeight','fontSize','fontStyle','color','textAlign','backgroundColor','lineHeight','letterSpacing','marginTop','marginBottom'];
+    var musicClip={ start:0, end:0 };
+    var RUN_PROPS=['fontFamily','fontWeight','fontSize','fontStyle','color'];
+
+    function isEditing(el){ return !!(el && el.getAttribute && el.getAttribute('contenteditable')==='true'); }
+    // SVG <text>/<textPath>/<tspan> can't take HTML run-spans or <br> — they render
+    // text via textContent along the path. Decorative arc labels (uzatu12) live here.
+    function isSvgText(el){
+        if(!el || el.namespaceURI!=='http://www.w3.org/2000/svg') return false;
+        var t=String(el.tagName||'').toLowerCase();
+        return t==='text'||t==='textpath'||t==='tspan'||t==='tref';
+    }
+    function runsPlainText(runs){
+        var s=''; for(var i=0;i<runs.length;i++){ var r=runs[i]; if(r&&typeof r.text==='string') s+=r.text; } return s;
+    }
+    function appendTextWithBreaks(parent, text){
+        var lines=String(text==null?'':text).split('\n');
+        for(var i=0;i<lines.length;i++){ if(i>0) parent.appendChild(document.createElement('br'));
+            if(lines[i]) parent.appendChild(document.createTextNode(lines[i])); }
+    }
+    function renderRuns(el, runs){
+        if(isEditing(el)) return;
+        var frag=document.createDocumentFragment();
+        for(var i=0;i<runs.length;i++){
+            var run=runs[i]; if(!run||typeof run.text!=='string') continue;
+            if(run.style&&typeof run.style==='object'){
+                var span=document.createElement('span'); span.setAttribute('data-user-style','true');
+                for(var k=0;k<RUN_PROPS.length;k++){ var p=RUN_PROPS[k], v=run.style[p];
+                    if(typeof v==='string'&&v) span.style.setProperty(CSS_PROP[p],v,'important'); }
+                // A per-run colour must beat gradient text (-webkit-text-fill-color:
+                // transparent) too, exactly like a block colour does.
+                if(typeof run.style.color==='string'&&run.style.color) span.style.setProperty('-webkit-text-fill-color', run.style.color, 'important');
+                appendTextWithBreaks(span, run.text); frag.appendChild(span);
+            } else { appendTextWithBreaks(frag, run.text); }
+        }
+        el.innerHTML=''; el.appendChild(frag);
+    }
+    // Remember the element's AUTHORED inline values for every block prop, so that
+    // clearing a user override restores what the template shipped instead of wiping
+    // it. Templates really do carry inline margins on editable elements (e.g.
+    // sundet/template5's event-text paragraph ships style="margin:16px auto 0"), and
+    // before this the removeProperty() below silently ate them. Captured on the
+    // FIRST applyContent pass for every content node — i.e. before the edit layer can
+    // have written anything — so the snapshot is always the template's own value.
+    function captureBaseStyle(el){
+        if(el.__v3BaseStyle) return el.__v3BaseStyle;
+        var base={};
+        for(var i=0;i<BLOCK_PROPS.length;i++){ var cssp=CSS_PROP[BLOCK_PROPS[i]];
+            base[cssp]=el.style.getPropertyValue(cssp)||''; }
+        el.__v3BaseStyle=base;
+        return base;
+    }
+    // Deep text-colour application — MIRROR of injectEditV3.applyTextColor. Pushes
+    // the colour (+ -webkit-text-fill-color, so GRADIENT names take a solid colour)
+    // onto the element AND its non-run descendants, tagging touched descendants
+    // data-v3-fill so a later clear undoes exactly them. Keeps the committed colour
+    // rendering identically in the editor re-render AND the public view.
+    function applyTextColorDeep(el, val, baseColor){
+        if(val){
+            el.style.setProperty('color', val, 'important');
+            el.style.setProperty('-webkit-text-fill-color', val, 'important');
+        } else {
+            el.style.removeProperty('-webkit-text-fill-color');
+            if(baseColor) el.style.setProperty('color', baseColor); else el.style.removeProperty('color');
+        }
+        var kids=el.querySelectorAll?el.querySelectorAll('*'):[];
+        if(val){
+            for(var i=0;i<kids.length;i++){ var k=kids[i];
+                if(k.getAttribute('data-user-style')==='true') continue;
+                k.style.setProperty('color', val, 'important');
+                k.style.setProperty('-webkit-text-fill-color', val, 'important');
+                k.setAttribute('data-v3-fill','1'); }
+        } else {
+            for(var j=0;j<kids.length;j++){ var d=kids[j];
+                if(d.getAttribute('data-v3-fill')!=='1') continue;
+                d.style.removeProperty('color'); d.style.removeProperty('-webkit-text-fill-color'); d.removeAttribute('data-v3-fill'); }
+        }
+    }
+    function applyBlockStyle(el, style){
+        // Safe to run while editing — only touches CSS props, not text content.
+        var base=captureBaseStyle(el);
+        var has=(style&&typeof style==='object');
+        for(var i=0;i<BLOCK_PROPS.length;i++){
+            var prop=BLOCK_PROPS[i], cssp=CSS_PROP[prop];
+            var vv=has?style[prop]:null;
+            if(prop==='color'){ applyTextColorDeep(el, (typeof vv==='string'&&vv)?vv:'', base[cssp]); continue; }
+            if(typeof vv==='string'&&vv) el.style.setProperty(cssp,vv,'important');
+            else if(base[cssp]) el.style.setProperty(cssp,base[cssp]);
+            else if(el.style.getPropertyValue(cssp)) el.style.removeProperty(cssp);
+        }
+    }
+    // Typed dates keep their value in doc.event, but their presentation still
+    // needs a stable block address. Give every authored date bind a deterministic
+    // token before applyContent runs, including templates that predate explicit
+    // data-edit-id attributes.
+    // A data-block is a structural section, so it must always be addressable by
+    // the section-order editor. Keep this small self-heal in the renderer as a
+    // safety net for older/custom v3 templates, while the source audit below
+    // still requires authors to commit the attributes explicitly.
+    function assignSectionContracts(){
+        var nodes=document.querySelectorAll('[data-block]'),used={},all=document.querySelectorAll('[data-edit-id]');
+        for(var a=0;a<all.length;a++){var existing=all[a].getAttribute('data-edit-id');if(existing)used[existing]=1;}
+        for(var i=0;i<nodes.length;i++){
+            var el=nodes[i];el.setAttribute('data-edit-container','');
+            if(el.getAttribute('data-edit-id'))continue;
+            var token=String(el.getAttribute('data-block')||'section').toLowerCase()
+                .replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'')||'section';
+            var base='sec-'+token,id=base,n=2;
+            while(used[id]){id=base+'-'+n;n++;}
+            el.setAttribute('data-edit-id',id);used[id]=1;
+        }
+    }
+    function assignDateEditIds(){
+        var nodes=document.querySelectorAll('[data-bind="date"]'),used={},all=document.querySelectorAll('[data-edit-id]');
+        for(var a=0;a<all.length;a++){var existing=all[a].getAttribute('data-edit-id');if(existing)used[existing]=1;}
+        for(var i=0;i<nodes.length;i++){
+            var el=nodes[i];if(el.getAttribute('data-edit-id'))continue;
+            var suffix=String(el.id||'').replace(/[^A-Za-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'');
+            var base='bound-date-'+(suffix||String(i+1)),id=base,n=2;
+            while(used[id]){id=base+'-'+n;n++;}
+            el.setAttribute('data-edit-id',id);used[id]=1;
+        }
+    }
+    // Complex typed widgets are not editable text blocks, but flow inserts still
+    // need a stable saved address to sit immediately before/after them. Keep the
+    // address separate from data-edit-id so calendar/map/gallery clicks retain
+    // their typed-settings behaviour.
+    function assignFlowAnchorIds(){
+        var nodes=document.querySelectorAll('[data-bind]'),used={},all=document.querySelectorAll('[data-edit-id],[data-v3-flow-anchor-id]');
+        for(var a=0;a<all.length;a++){
+            var existing=all[a].getAttribute('data-edit-id')||all[a].getAttribute('data-v3-flow-anchor-id');
+            if(existing)used[existing]=1;
+        }
+        for(var i=0;i<nodes.length;i++){
+            var el=nodes[i],bind=String(el.getAttribute('data-bind')||'').trim();
+            if(!bind||bind==='music'||bind.indexOf('countdown.')===0||el.getAttribute('data-edit-id')||el.getAttribute('data-v3-flow-anchor-id'))continue;
+            var suffix=String(el.id||'').replace(/[^A-Za-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'');
+            var kind=bind.toLowerCase().replace(/[^a-z0-9_-]+/g,'-').replace(/^-+|-+$/g,'')||'widget';
+            var base='bound-'+kind+'-'+(suffix||String(i+1)),id=base,n=2;
+            while(used[id]){id=base+'-'+n;n++;}
+            el.setAttribute('data-v3-flow-anchor-id',id);used[id]=1;
+        }
+    }
+    // Object positioning/layers are structured block data, never free-form CSS.
+    // The translate longhand is independent, so moving a block doesn't overwrite
+    // a template's authored transform (common on decorative headings).
+    function captureBaseLayout(el){
+        if(el.__v3BaseLayout) return el.__v3BaseLayout;
+        el.__v3BaseLayout={
+            translate:el.style.getPropertyValue('translate')||'',
+            scale:el.style.getPropertyValue('scale')||'',
+            rotate:el.style.getPropertyValue('rotate')||'',
+            position:el.style.getPropertyValue('position')||'',
+            zIndex:el.style.getPropertyValue('z-index')||''
+        };
+        return el.__v3BaseLayout;
+    }
+    function restoreInline(el, prop, value){
+        if(value) el.style.setProperty(prop,value); else el.style.removeProperty(prop);
+    }
+    function applyFlowSpaceReserve(el,y,style,on){
+        var baseStyle=captureBaseStyle(el),explicit=style&&typeof style.marginBottom==='string'&&style.marginBottom?style.marginBottom:'';
+        var authored=baseStyle['margin-bottom']||'';
+        // Always remove the previous calculated reserve before measuring the
+        // element's real authored/user margin; repeated APPLY_V3 calls must not
+        // accumulate the same y offset.
+        if(explicit)el.style.setProperty('margin-bottom',explicit,'important');
+        else if(authored)el.style.setProperty('margin-bottom',authored);
+        else el.style.removeProperty('margin-bottom');
+        el.removeAttribute('data-v3-flow-reserve');
+        if(!on||!(y>0))return;
+        var current='0px';try{current=window.getComputedStyle(el).marginBottom||'0px';}catch(_){}
+        el.style.setProperty('margin-bottom','calc(('+current+') + '+Math.round(y)+'px)','important');
+        el.setAttribute('data-v3-flow-reserve','1');
+    }
+    function applyBlockLayout(el, layout, style){
+        var base=captureBaseLayout(el), has=layout&&typeof layout==='object';
+        var x=has&&isFinite(Number(layout.x))?Math.round(Number(layout.x)):0;
+        var y=has&&isFinite(Number(layout.y))?Math.round(Number(layout.y)):0;
+        var z=has&&isFinite(Number(layout.zIndex))?Math.round(Number(layout.zIndex)):0;
+        var scale=has&&isFinite(Number(layout.scale))?Math.max(.25,Math.min(4,Number(layout.scale))):1;
+        var rotation=has&&isFinite(Number(layout.rotation))?Math.max(-180,Math.min(180,Math.round(Number(layout.rotation)))):0;
+        // Old editor builds allowed native template text to be dragged into a
+        // different section. That persisted a desktop-only pixel translation and
+        // is the source of timeline/owners overlap on phones. Preserve local
+        // adjustments, but self-heal a translation whose centre leaves the
+        // element's own responsive section. User-created inserts are free-canvas
+        // objects and deliberately do not enter this guard.
+        var section=null,sectionRect=null,baseRect=null;
+        var oldTransition='',oldTransitionPriority='';
+        var repairCrossSection=!!(document.body&&document.body.hasAttribute('data-v3-repair-cross-section-layout'));
+        if(repairCrossSection&&(x||y)&&!el.hasAttribute('data-v3-insert-id')&&el.closest){
+            section=el.closest('[data-edit-container]');
+            if(section&&section!==el){
+                oldTransition=el.style.getPropertyValue('transition')||'';
+                oldTransitionPriority=el.style.getPropertyPriority('transition')||'';
+                el.style.setProperty('transition','none','important');
+                restoreInline(el,'translate',base.translate);
+                try{sectionRect=section.getBoundingClientRect();baseRect=el.getBoundingClientRect();}catch(_){}
+            }
+        }
+        if(x||y) el.style.setProperty('translate',x+'px '+y+'px','important');
+        else restoreInline(el,'translate',base.translate);
+        if(sectionRect&&baseRect){
+            var baseCx=baseRect.left+baseRect.width/2,baseCy=baseRect.top+baseRect.height/2;
+            var baseInside=baseCx>=sectionRect.left&&baseCx<=sectionRect.right&&baseCy>=sectionRect.top&&baseCy<=sectionRect.bottom;
+            var movedRect=null;try{movedRect=el.getBoundingClientRect();}catch(_){}
+            var movedCx=movedRect?movedRect.left+movedRect.width/2:baseCx;
+            var movedCy=movedRect?movedRect.top+movedRect.height/2:baseCy;
+            var movedInside=movedCx>=sectionRect.left&&movedCx<=sectionRect.right&&movedCy>=sectionRect.top&&movedCy<=sectionRect.bottom;
+            if(baseInside&&!movedInside){x=0;y=0;restoreInline(el,'translate',base.translate);el.setAttribute('data-v3-layout-repaired','1');}
+            else el.removeAttribute('data-v3-layout-repaired');
+        } else el.removeAttribute('data-v3-layout-repaired');
+        if(section){if(oldTransition)el.style.setProperty('transition',oldTransition,oldTransitionPriority);else el.style.removeProperty('transition');}
+        var nativeFlow=!el.hasAttribute('data-v3-insert-id')&&!el.hasAttribute('data-edit-container');
+        var normalFlow=nativeFlow,flowNode=el;
+        while(normalFlow&&flowNode&&flowNode!==section){
+            var position='';try{position=window.getComputedStyle(flowNode).position||'';}catch(_){}
+            if(position==='absolute'||position==='fixed')normalFlow=false;
+            flowNode=flowNode.parentElement;
+        }
+        var reserve=normalFlow
+            &&(layout&&layout.reserveSpace===true||repairCrossSection&&y>0);
+        applyFlowSpaceReserve(el,y,style,reserve);
+        el.setAttribute('data-v3-x',String(x)); el.setAttribute('data-v3-y',String(y));
+        if(scale!==1) el.style.setProperty('scale',String(scale),'important'); else restoreInline(el,'scale',base.scale);
+        if(rotation) el.style.setProperty('rotate',rotation+'deg','important'); else restoreInline(el,'rotate',base.rotate);
+        el.setAttribute('data-v3-scale',String(scale)); el.setAttribute('data-v3-rotation',String(rotation));
+        if(z){
+            var pos=''; try{ pos=window.getComputedStyle(el).position||''; }catch(_){}
+            if(pos==='static'||!pos){ el.style.setProperty('position','relative','important'); el.setAttribute('data-v3-positioned','1'); }
+            el.style.setProperty('z-index',String(z),'important');
+        } else {
+            restoreInline(el,'z-index',base.zIndex);
+            if(el.getAttribute('data-v3-positioned')==='1') restoreInline(el,'position',base.position);
+            el.removeAttribute('data-v3-positioned');
+        }
+    }
+    function animationFrames(type){
+        if(type==='fade') return [{opacity:0},{opacity:1}];
+        if(type==='rise') return [{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}];
+        if(type==='left') return [{opacity:0,transform:'translateX(-28px)'},{opacity:1,transform:'translateX(0)'}];
+        if(type==='right') return [{opacity:0,transform:'translateX(28px)'},{opacity:1,transform:'translateX(0)'}];
+        if(type==='zoom') return [{opacity:0,transform:'scale(.86)'},{opacity:1,transform:'scale(1)'}];
+        if(type==='blur') return [{opacity:0,filter:'blur(10px)'},{opacity:1,filter:'blur(0)'}];
+        return null;
+    }
+    function playBlockAnimation(el, animation, force){
+        var a=animation&&typeof animation==='object'?animation:null;
+        var frames=a?animationFrames(String(a.type||'')):null;
+        if(!frames){
+            if(el.__v3Motion){ try{ el.__v3Motion.cancel(); }catch(_){} el.__v3Motion=null; }
+            el.removeAttribute('data-v3-animation-signature'); return;
+        }
+        var duration=Math.max(150,Math.min(3000,Math.round(Number(a.duration)||600)));
+        var delay=Math.max(0,Math.min(5000,Math.round(Number(a.delay)||0)));
+        var sig=String(a.type)+'|'+duration+'|'+delay;
+        if(!force&&el.getAttribute('data-v3-animation-signature')===sig) return;
+        el.setAttribute('data-v3-animation-signature',sig);
+        if(el.__v3Motion){ try{ el.__v3Motion.cancel(); }catch(_){} el.__v3Motion=null; }
+        var reduced=false; try{ reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(_){}
+        if(reduced||!el.animate) return;
+        try{ el.__v3Motion=el.animate(frames,{duration:duration,delay:delay,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'}); }catch(_){}
+    }
+    function applyBlockAnimation(el, animation){ playBlockAnimation(el,animation,false); }
+    window.__PREVIEW_V3_BLOCK_ANIMATION=function(editId, animation){
+        var id=String(editId||'').replace(/[^\w-]/g,''); if(!id) return;
+        var el=null; try{ el=document.querySelector('[data-edit-id="'+id+'"]'); }catch(_){}
+        if(!el) return;
+        var doc=window.__LAST_INVITE_V3_DOC||{}, blocks=doc.blocks||{};
+        playBlockAnimation(el,animation||(blocks[id]&&blocks[id].animation),true);
+    };
+    // Focal point + zoom for a cover <img>: "<x>% <y>%" -> object-position (which
+    // part of the photo stays visible) plus scale(zoom) around that same focal
+    // point, so the host can reposition AND zoom an uploaded photo inside the
+    // fixed hero frame. A scaled image would spill past frames that don't already
+    // clip, so while zoomed we force overflow:hidden on the frame (the img's
+    // parent) and drop it back to the template's own value otherwise. Malformed /
+    // absent pos or zoom<=1 -> clear the inline values (CSS/center, no zoom).
+    function setImgPos(img, pos, zoom){
+        if(!img||!img.style) return;
+        if(!img.__v3BaseCropStyle){
+            var bp=img.parentElement;
+            img.__v3BaseCropStyle={
+                objectPosition:img.style.getPropertyValue('object-position')||'',
+                transformOrigin:img.style.getPropertyValue('transform-origin')||'',
+                transform:img.style.getPropertyValue('transform')||'',
+                parentOverflow:bp&&bp.style?(bp.style.getPropertyValue('overflow')||''):''
+            };
+        }
+        var base=img.__v3BaseCropStyle;
+        var ok=typeof pos==='string' && /^\d{1,3}% \d{1,3}%$/.test(pos);
+        if(ok){ img.style.objectPosition=pos; img.style.transformOrigin=pos; }
+        else { restoreInline(img,'object-position',base.objectPosition); restoreInline(img,'transform-origin',base.transformOrigin); }
+        var z=Number(zoom), frame=img.parentElement;
+        if(z>1 && z<=5){ img.style.transform='scale('+z+')'; if(frame&&frame.style) frame.style.overflow='hidden'; }
+        else { restoreInline(img,'transform',base.transform); if(frame&&frame.style) restoreInline(frame,'overflow',base.parentOverflow); }
+        if(ok||(z>1&&z<=5)) img.setAttribute('data-v3-img-crop','1'); else img.removeAttribute('data-v3-img-crop');
+    }
+    function applyImage(el, url, pos, zoom){
+        if(!el) return; var tag=String(el.tagName||'');
+        if(tag==='IMG'){ if(url&&el.getAttribute('src')!==url) el.src=url; setImgPos(el, pos, zoom); return; }
+        if(tag.toLowerCase()==='image'){ // SVG <image> uses href (+ legacy xlink:href) — mirror injectDocRender
+            if(url&&el.getAttribute('href')!==url){ el.setAttribute('href', url); try{ el.setAttributeNS('http://www.w3.org/1999/xlink','href',url); }catch(_){} }
+            return;
+        }
+        // a bound container that wraps an <img> (e.g. a photo frame div): set the
+        // inner image, not a background, so the authored <img> keeps showing.
+        var inner=el.querySelector&&el.querySelector('img');
+        if(inner){ if(url&&inner.getAttribute('src')!==url) inner.src=url; setImgPos(inner, pos, zoom); return; }
+        if(!url) return;
+        // empty container (e.g. a .hero-photo-placeholder): inject a real <img> the way
+        // the legacy injectPhoto did — picks up the template's .hero-photo-img / "#heroPhoto
+        // img" CSS and object-fit:cover, instead of a background-image that ignores sizing.
+        var im=document.createElement('img'); im.className='hero-photo-img'; im.alt=''; im.loading='lazy'; im.decoding='async';
+        im.style.cssText='width:100%;height:100%;object-fit:cover;display:block;';
+        setImgPos(im, pos, zoom);
+        im.src=url; el.insertBefore(im, el.firstChild);
+    }
+
+    /* ===== block + localized-default application (the text source) ===== */
+    function applyContent(doc, lang){
+        var blocks=(doc&&doc.blocks&&typeof doc.blocks==='object')?doc.blocks:{};
+        window.__LAST_INVITE_V3_DOC=doc||{};
+        // Every element that is either editable (data-edit-id) or carries a
+        // localized default (data-kk/data-ru) is a content element.
+        var nodes=document.querySelectorAll('[data-edit-id],[data-kk],[data-ru]');
+        for(var i=0;i<nodes.length;i++){
+            var el=nodes[i];
+            // Snapshot the authored inline style NOW — for every content node, not
+            // just the ones that already have a block. An element styled by the user
+            // before it had any block entry would otherwise get its post-edit value
+            // captured as the "template default" on the next pass.
+            captureBaseStyle(el);
+            var editing=isEditing(el);
+            var id=el.getAttribute('data-edit-id')||'';
+            var block=id?blocks[id]:null;
+            // Never rewrite TEXT while the element is being typed in (would clobber
+            // the caret), but style / hidden / image MUST still apply live — e.g.
+            // the toolbar styling the very element the user just tapped.
+            var svg=isSvgText(el);
+            if(block&&block.runs&&block.runs.length){ if(!editing){ if(svg) el.textContent=runsPlainText(block.runs); else renderRuns(el, block.runs); } }
+            else if(!editing){ var def=el.getAttribute(lang==='ru'?'data-ru':'data-kk');
+                if(def!=null){ if(svg){ el.textContent=String(def); } else { el.innerHTML=''; appendTextWithBreaks(el, def); } } }
+            if(block){
+                applyBlockStyle(el, block.style||null);
+                applyBlockLayout(el, block.layout||null, block.style||null);
+                applyBlockAnimation(el, block.animation||null);
+                if(block.image||block.imageCrop){ var crop=block.imageCrop||{};
+                    applyImage(el,block.image||'',crop.position||null,crop.zoom||null); }
+            } else { applyBlockLayout(el,null,null); applyBlockAnimation(el,null);
+                var cropped=el.tagName==='IMG'?el:(el.querySelector&&el.querySelector('img[data-v3-img-crop="1"]'));
+                if(cropped&&cropped.getAttribute('data-v3-img-crop')==='1') setImgPos(cropped,null,null); }
+            // hidden state — clear ONLY the renderer's OWN display:none (tagged
+            // data-v3-hidden) when a block is restored. A template-authored inline
+            // display:none (RSVP successMsg, empty photo slots, hidden name dupes)
+            // must NEVER be clobbered into visibility — that was a real bug.
+            if(block && block.hidden===true){ el.style.display='none'; el.setAttribute('data-v3-hidden','1'); }
+            else if(el.getAttribute('data-v3-hidden')==='1'){ el.style.removeProperty('display'); el.removeAttribute('data-v3-hidden'); }
+            if(block && block.locked===true) el.setAttribute('data-v3-locked','1');
+            else el.removeAttribute('data-v3-locked');
+            if(block && block.groupId) el.setAttribute('data-v3-group-id',String(block.groupId));
+            else el.removeAttribute('data-v3-group-id');
+        }
+        // Localized input/textarea placeholders (data-kk-ph / data-ru-ph): the loop
+        // above only rewrites text content, never the placeholder attribute.
+        var phNodes=document.querySelectorAll('[data-kk-ph],[data-ru-ph]');
+        for(var p=0;p<phNodes.length;p++){
+            var pel=phNodes[p];
+            var ph=pel.getAttribute(lang==='ru'?'data-ru-ph':'data-kk-ph');
+            if(ph!=null) pel.setAttribute('placeholder', ph);
+        }
+    }
+
+    /* ===== block reordering (user-set order among addressable siblings) =====
+       blocks[id].order is an explicit position stamped by reorderBlocks. We
+       permute ONLY the ordered blocks that share a DOM parent, placing them into
+       the slots those same blocks currently occupy (ascending), sorted by order.
+       Decorative / non-ordered siblings never move (their positions are the fixed
+       anchors), so this is safe for block, flex and grid parents alike. Idempotent:
+       re-running with the same orders reproduces the same arrangement. */
+    function applyBlockOrder(doc){
+        var blocks=(doc&&doc.blocks&&typeof doc.blocks==='object')?doc.blocks:{};
+        var ids=Object.keys(blocks); if(!ids.length) return;
+        var parents=[], groups=[];
+        function groupFor(parent){
+            for(var i=0;i<parents.length;i++){ if(parents[i]===parent) return groups[i]; }
+            parents.push(parent); var g=[]; groups.push(g); return g;
+        }
+        for(var i=0;i<ids.length;i++){
+            var id=ids[i], b=blocks[id];
+            if(!b || typeof b.order!=='number' || !isFinite(b.order)) continue;
+            var el=null; try{ el=document.querySelector('[data-edit-id="'+id.replace(/[^\w-]/g,'')+'"]'); }catch(_){ el=null; }
+            if(!el || !el.parentNode) continue;
+            groupFor(el.parentNode).push({ el:el, order:b.order, id:id });
+        }
+        for(var gi=0; gi<groups.length; gi++){
+            var parent=parents[gi], items=groups[gi];
+            if(items.length<2) continue;
+            var kids=Array.prototype.slice.call(parent.children);
+            var itemEls=items.map(function(it){ return it.el; });
+            var slots=[];
+            for(var k=0;k<items.length;k++){ var pos=kids.indexOf(items[k].el); if(pos>=0) slots.push(pos); }
+            if(slots.length!==items.length) continue;   // some item not a direct child — bail
+            slots.sort(function(a,b){ return a-b; });
+            // The stable anchor for each slot: the nearest following child that is
+            // NOT one of our items (or null = append to end). Computed from the
+            // pre-mutation DOM so it never points at a node we're about to move.
+            var anchors=[];
+            for(var s=0;s<slots.length;s++){
+                var anchor=null;
+                for(var q=slots[s]+1;q<kids.length;q++){ if(itemEls.indexOf(kids[q])===-1){ anchor=kids[q]; break; } }
+                anchors.push(anchor);
+            }
+            var sorted=items.slice().sort(function(a,b){ return (a.order-b.order) || (a.id<b.id?-1:1); });
+            for(var m=0;m<sorted.length;m++){
+                if(anchors[m]) parent.insertBefore(sorted[m].el, anchors[m]);
+                else parent.appendChild(sorted[m].el);
+            }
+        }
+    }
+
+    /* ===== typed-data binds ===== */
+    var countdownTimer=null;
+    function buildCalendar(container, date, lang){
+        var model=calendarModel(date, lang); if(!model){ return; }
+        // Author-controlled markup via optional <template> fragments inside the
+        // container; falls back to plain class-hooked cells when absent.
+        var tWd=container.querySelector('template[data-cal-weekday]');
+        var tDay=container.querySelector('template[data-cal-day]');
+        var tEvent=container.querySelector('template[data-cal-event]')||tDay;
+        var tEmpty=container.querySelector('template[data-cal-empty]');
+        // Clear everything except the <template> fragments themselves.
+        Array.prototype.slice.call(container.children).forEach(function(ch){
+            if(ch.tagName!=='TEMPLATE') container.removeChild(ch);
+        });
+        function fill(tpl, fallbackClass, value, isEvent){
+            var node;
+            if(tpl&&tpl.content&&tpl.content.firstElementChild){
+                node=tpl.content.firstElementChild.cloneNode(true);
+                var slot=node.matches&&node.matches('[data-cal-num]')?node:node.querySelector('[data-cal-num]');
+                if(slot) slot.textContent=value; else node.textContent=value;
+            } else { node=document.createElement('div'); node.className=fallbackClass; node.textContent=value;
+                if(isEvent) node.className+=' is-event'; }
+            return node;
+        }
+        // some templates print the weekday row as static markup OUTSIDE the grid
+        // (data-cal-no-weekdays) — then the bind only fills the day cells.
+        if(container.getAttribute('data-cal-no-weekdays')===null){
+            model.weekdays.forEach(function(w){ container.appendChild(fill(tWd,'cal-wd',w,false)); });
+        }
+        model.cells.forEach(function(c){
+            if(c.empty){ var e; if(tEmpty&&tEmpty.content&&tEmpty.content.firstElementChild){ e=tEmpty.content.firstElementChild.cloneNode(true); } else { e=document.createElement('div'); e.className='cal-day'; } container.appendChild(e); return; }
+            container.appendChild(fill(c.isEvent?tEvent:tDay,'cal-day'+(c.isEvent?' is-event':''),String(c.day),c.isEvent));
+        });
+    }
+    /* "date strip": a band of cells centered on the event date (elegant single-
+       line calendars). data-strip="days|weekdays", data-strip-span=N -> 2N+1
+       cells; each gets strip-off-<dist> (+ is-center) classes the template styles.
+       Optional <template data-strip-cell> / <template data-strip-center> markup;
+       a [data-strip-num] slot (or textContent) receives the value. */
+    function buildDateStrip(container, date, lang){
+        var kind=container.getAttribute('data-strip')||'days';
+        var span=Number(container.getAttribute('data-strip-span')); if(!(span>0)) span=2;
+        var model=dateStripModel(date, lang, kind, span); if(!model) return;
+        var tCell=container.querySelector('template[data-strip-cell]');
+        var tCenter=container.querySelector('template[data-strip-center]')||tCell;
+        Array.prototype.slice.call(container.children).forEach(function(ch){ if(ch.tagName!=='TEMPLATE') container.removeChild(ch); });
+        model.cells.forEach(function(c){
+            var tpl=c.isCenter?tCenter:tCell; var node;
+            if(tpl&&tpl.content&&tpl.content.firstElementChild){
+                node=tpl.content.firstElementChild.cloneNode(true);
+                var slot=(node.matches&&node.matches('[data-strip-num]'))?node:node.querySelector('[data-strip-num]');
+                if(slot) slot.textContent=c.value; else node.textContent=c.value;
+                // combined cell: a [data-strip-weekday] slot gets the weekday name
+                var wd=node.querySelector&&node.querySelector('[data-strip-weekday]'); if(wd) wd.textContent=c.weekday;
+            } else { node=document.createElement('div'); node.textContent=c.value; }
+            node.className=((node.className?node.className+' ':'')+'strip-cell strip-off-'+c.dist+(c.isCenter?' is-center':'')).replace(/\s+/g,' ').trim();
+            node.setAttribute('data-strip-offset', String(c.offset));
+            container.appendChild(node);
+        });
+    }
+    /* TABLE calendar: fills a <table>'s <thead><tr> with weekday <th> and <tbody>
+       with week <tr>s of day <td> (Monday-first, trailing-padded to full weeks).
+       Cell classes are author-configurable via attrs on the table so it stays
+       generic: data-cal-empty-class, data-cal-event-class, data-cal-event-mark
+       (a <span> prepended into the event cell, e.g. a heart). */
+    function buildCalendarTable(table, date, lang){
+        var model=calendarModel(date, lang); if(!model) return;
+        var head=table.querySelector('thead tr'); var body=table.querySelector('tbody');
+        if(!head||!body) return;
+        var emptyCls=table.getAttribute('data-cal-empty-class')||'cal-muted';
+        var eventCls=table.getAttribute('data-cal-event-class')||'cal-active';
+        var mark=table.getAttribute('data-cal-event-mark')||'';
+        head.innerHTML=''; body.innerHTML='';
+        model.weekdays.forEach(function(w){ var th=document.createElement('th'); th.textContent=w; head.appendChild(th); });
+        var cells=model.cells.slice();
+        while(cells.length%7) cells.push({empty:true});
+        for(var i=0;i<cells.length;i+=7){
+            var tr=document.createElement('tr');
+            for(var j=0;j<7;j++){ var c=cells[i+j]; var td=document.createElement('td');
+                if(c.empty){ td.className=emptyCls; }
+                else if(c.isEvent){ td.className=eventCls;
+                    if(mark){ var s=document.createElement('span'); s.className=mark; td.appendChild(s); }
+                    td.appendChild(document.createTextNode(String(c.day))); }
+                else { td.textContent=String(c.day); }
+                tr.appendChild(td); }
+            body.appendChild(tr);
+        }
+    }
+    /* "list": dynamic repeating rows (e.g. a programme schedule). The container
+       declares data-list-id; rows live in doc.lists[listId]. ABSENT list -> the
+       authored rows are left untouched (the default, keeping bespoke per-row
+       markup). PRESENT list -> the container's <template data-list-item> is
+       cloned once per row; each [data-list-slot] descendant becomes an editable
+       cell with a synthetic data-edit-id (lst__listId__rowId__slot) so the edit
+       layer tap-edits it exactly like a block, while the text lives in the row. */
+    function buildList(container, doc, lang){
+        var listId=String(container.getAttribute('data-list-id')||'').trim();
+        if(!listId) return;
+        var lists=(doc&&doc.lists&&typeof doc.lists==='object')?doc.lists:null;
+        if(!lists||!Object.prototype.hasOwnProperty.call(lists,listId)) return; // absent -> authored default
+        var tpl=container.querySelector('template[data-list-item]');
+        if(!tpl||!tpl.content||!tpl.content.firstElementChild) return;
+        // Don't rebuild under the caret — would destroy an in-progress cell edit;
+        // the commit's next APPLY_V3 rebuilds with the saved runs.
+        if(container.querySelector('[contenteditable="true"]')) return;
+        var rows=Array.isArray(lists[listId])?lists[listId]:[];
+        // Clear previously rendered rows; keep the <template> fragment(s).
+        Array.prototype.slice.call(container.children).forEach(function(ch){
+            if(ch.tagName!=='TEMPLATE') container.removeChild(ch);
+        });
+        for(var r=0;r<rows.length;r++){
+            var row=rows[r]; if(!row||!row.id) continue;
+            var node=tpl.content.firstElementChild.cloneNode(true);
+            node.setAttribute('data-v3-row','');
+            node.setAttribute('data-v3-row-id', String(row.id));
+            var cells=(row.cells&&typeof row.cells==='object')?row.cells:{};
+            var styles=(row.styles&&typeof row.styles==='object')?row.styles:{};
+            var slots=node.querySelectorAll('[data-list-slot]');
+            for(var s=0;s<slots.length;s++){
+                var slot=slots[s];
+                var name=String(slot.getAttribute('data-list-slot')||'').trim();
+                if(!name) continue;
+                slot.setAttribute('data-edit-id', 'lst__'+listId+'__'+row.id+'__'+name);
+                // localized default for a fresh cell — read BEFORE stripping so a
+                // re-apply's applyContent (keyed off data-kk/ru) can't clobber it.
+                var def=slot.getAttribute(lang==='ru'?'data-ru':'data-kk');
+                slot.removeAttribute('data-kk'); slot.removeAttribute('data-ru');
+                var cr=cells[name];
+                if(cr&&cr.length){ renderRuns(slot, cr); }
+                else if(def!=null){ slot.innerHTML=''; appendTextWithBreaks(slot, def); }
+                applyBlockStyle(slot, styles[name]||null);
+            }
+            if(row.hidden===true) node.style.display='none';
+            container.appendChild(node);
+        }
+    }
+    /* "compose": fill an element's text from a small template that mixes the typed
+       date with the plain text of OTHER content blocks — e.g. the decorative arc on
+       uzatu12 ("<venue> · <date>") so it tracks the location + date the user enters
+       instead of being frozen authored decor. data-tpl(-<lang>) tokens:
+         {date:FMT}       -> formatDate(eventDate, FMT, lang)   (literals pass through)
+         {block:editId}   -> trimmed text of [data-edit-id="editId"] as already rendered
+         {initial:editId} -> first letter (uppercased) of that block — e.g. wedding16's
+                             monogram tracks the couple's typed names instead of "Р А"
+       Runs AFTER applyContent, so {block:...} reflects the user's edit (or localized
+       default). textContent works on SVG <textPath>, so the arc updates in place. A
+       leading/trailing separator left by an empty token is trimmed off. */
+    function blockPlainText(id){
+        if(!id) return '';
+        var node=null; try{ node=document.querySelector('[data-edit-id="'+String(id).replace(/[^\w-]/g,'')+'"]'); }catch(_){}
+        return node?String(node.textContent||'').replace(/\s+/g,' ').trim():'';
+    }
+    function composeText(el, date, lang){
+        var tpl=el.getAttribute('data-tpl-'+lang)||el.getAttribute('data-tpl')||'';
+        var out=String(tpl).replace(/\{([^}]+)\}/g, function(_m, inner){
+            inner=String(inner).trim();
+            var ci=inner.indexOf(':'); var key=ci>=0?inner.slice(0,ci).trim():inner; var arg=ci>=0?inner.slice(ci+1).trim():'';
+            if(key==='date') return date?formatDate(date, arg, lang):'';
+            if(key==='block') return blockPlainText(arg);
+            if(key==='initial'){ var bt=blockPlainText(arg); return bt?bt.charAt(0).toUpperCase():''; }
+            return '';
+        });
+        return out.replace(/\s+/g,' ').replace(/^\s*[·•]\s*|\s*[·•]\s*$/g,'').trim();
+    }
+    function applyBinds(doc, lang){
+        var date=parseEventDate(doc&&doc.event&&doc.event.date);
+        var media=(doc&&doc.media)||{};
+        var loc=(doc&&doc.location)||{};
+        var nodes=document.querySelectorAll('[data-bind]');
+        var cd=null;
+        for(var i=0;i<nodes.length;i++){
+            var el=nodes[i]; if(isEditing(el)) continue;
+            var bind=String(el.getAttribute('data-bind')||'').trim();
+            if(bind==='date'){ if(date){ var fmt=el.getAttribute('data-fmt-'+lang)||el.getAttribute('data-fmt')||'D MMMM YYYY'; el.textContent=formatDate(date, fmt, lang); } }
+            else if(bind==='compose'){
+                // a tap-edited override (blocks[id].runs, applied by applyContent) wins;
+                // with no override the label auto-composes from the date + location text.
+                var cid=el.getAttribute('data-edit-id');
+                var cb=(cid&&doc&&doc.blocks)?doc.blocks[cid]:null;
+                if(!(cb&&cb.runs&&cb.runs.length)) el.textContent=composeText(el, date, lang);
+            }
+            else if(bind==='calendar'){ if(date) buildCalendar(el, date, lang); }
+            else if(bind==='calendar-table'){ if(date) buildCalendarTable(el, date, lang); }
+            else if(bind==='date-strip'){ if(date) buildDateStrip(el, date, lang); }
+            else if(bind==='list'){ buildList(el, doc, lang); }
+            else if(bind.indexOf('countdown')===0){ cd=cd||(date?countdownParts(date.getTime(),Date.now()):null);
+                var unit=bind.split('.')[1]||el.getAttribute('data-unit')||'';
+                if(cd&&cd[unit]!=null) el.textContent=cd[unit]; }
+            else if(bind==='cover'){ if(media.cover) applyImage(el, media.cover, media.coverPos, media.coverZoom); }
+            else if(bind==='gallery'){ applyGallery(el, Array.isArray(media.gallery)?media.gallery:[]); }
+            else if(bind==='map'){ var u=safeHref(loc.url);
+                if(el.tagName==='A') el.href=u||'#';
+                // In the editor keep the button visible + clickable even without a URL,
+                // so a tap can open the location-link field (editIdentity routes it).
+                // Public view still hides it until a real URL is set.
+                var mapKeep=u||isEditorSurface();
+                el.style.display=mapKeep?'':'none'; el.style.pointerEvents=mapKeep?'auto':'none'; }
+            else if(bind==='music'){ var src=media.music&&media.music.url?String(media.music.url):'';
+                if(src){ if(el.getAttribute('src')!==src) el.setAttribute('src',src); }
+                musicClip.start=Number(media.music&&media.music.startAt)||0;
+                musicClip.end=Number(media.music&&media.music.endAt)||0; }
+        }
+        startCountdown(date);
+    }
+    function applyGallery(container, sources){
+        if(!sources.length) return;
+        var imgs=container.querySelectorAll('img');
+        // Empty gallery container (template's slide JS is gone): build a
+        // self-contained, swipeable scroll-snap carousel from the uploaded photos.
+        if(!imgs.length){
+            container.setAttribute('data-v3-gallery','');
+            container.style.cssText+=';display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px;';
+            for(var s=0;s<sources.length;s++){ var src=String(sources[s]||''); if(!src) continue;
+                var im=document.createElement('img'); im.src=src; im.alt=''; im.loading='lazy';
+                im.style.cssText='flex:0 0 auto;width:78%;max-width:320px;height:auto;border-radius:12px;object-fit:cover;scroll-snap-align:center;'; container.appendChild(im); }
+            return;
+        }
+        for(var i=0;i<imgs.length;i++){ var u=sources[i]||sources[sources.length-1]||''; if(u&&imgs[i].getAttribute('src')!==u) imgs[i].src=u; }
+    }
+    function startCountdown(date){
+        if(countdownTimer){ clearInterval(countdownTimer); countdownTimer=null; }
+        if(!date) return;
+        var units=['days','hours','minutes','seconds'];
+        function tick(){ var p=countdownParts(date.getTime(),Date.now());
+            for(var u=0;u<units.length;u++){
+                var els=document.querySelectorAll('[data-bind="countdown.'+units[u]+'"]');
+                for(var e=0;e<els.length;e++){ if(!isEditing(els[e])) els[e].textContent=p[units[u]]; }
+            }
+        }
+        tick(); countdownTimer=setInterval(tick,1000);
+    }
+
+    /* ===== invitation-wide theme (global font + page background) ===== */
+    function safeFont(v){
+        var s=String(v==null?'':v).trim();
+        if(!s||s.length>120||/[{}<>;]/.test(s)) return '';
+        return /^[\w\s,'"-]+$/.test(s)?s:'';
+    }
+    // A CSS colour token (hex / rgb()/rgba() / named) with no injection chars.
+    function safeColor(v){
+        var s=String(v==null?'':v).trim();
+        if(!s||s.length>40||/[{}<>;]/.test(s)) return '';
+        return /^[#\w(),.%\s-]+$/.test(s)?s:'';
+    }
+    // Darken a #rgb / #rrggbb hex toward black by factor (0..1). Returns empty for
+    // anything that is not a hex colour, so callers can fall back to the raw value.
+    function shadeHex(hex, factor){
+        var s=String(hex==null?'':hex).trim().replace(/^#/,'');
+        if(s.length===3){ s=s[0]+s[0]+s[1]+s[1]+s[2]+s[2]; }
+        if(s.length!==6 || /[^0-9a-fA-F]/.test(s)) return '';
+        function part(i){ var n=Math.round(parseInt(s.substr(i,2),16)*factor); n=n<0?0:(n>255?255:n); var h=n.toString(16); return h.length<2?'0'+h:h; }
+        return '#'+part(0)+part(2)+part(4);
+    }
+    function applyTheme(doc){
+        var theme=(doc&&doc.theme)||{};
+        // apply-to-all font: !important beats template class rules; a per-block
+        // inline !important (from the toolbar) still wins over this stylesheet.
+        var fam=safeFont(theme.fontFamily);
+        var st=document.getElementById('__v3-global-font');
+        if(!st){ if(fam){ st=document.createElement('style'); st.id='__v3-global-font'; (document.head||document.documentElement).appendChild(st); } }
+        if(st){ var rules=fam?('body,body *{font-family:'+fam+' !important;}'):''; if(st.textContent!==rules) st.textContent=rules; }
+        // apply-to-all text COLOUR: mirror of the global font. Low-specificity so a
+        // per-block inline colour still wins, and -webkit-text-fill-color so gradient
+        // names take the colour too. Empty clears the rule (template colours return).
+        var col=safeColor(theme.color);
+        var cst=document.getElementById('__v3-global-color');
+        if(!cst){ if(col){ cst=document.createElement('style'); cst.id='__v3-global-color'; (document.head||document.documentElement).appendChild(cst); } }
+        if(cst){ var crules=col?('body,body *{color:'+col+' !important;-webkit-text-fill-color:'+col+' !important;}'):''; if(cst.textContent!==crules) cst.textContent=crules; }
+        var bg=theme.backgroundColor;
+        if(document.body){
+            if(typeof bg==='string' && bg) document.body.style.setProperty('background-color', bg, 'important');
+            else document.body.style.removeProperty('background-color');
+        }
+        // Global accent colour -> the template's --accent (+ a derived darker
+        // --accent-dark for gradients). Only takes effect once the user picks one;
+        // empty removes the inline vars so the template's authored :root value shows.
+        var accent=theme.accentColor;
+        var root=document.documentElement;
+        if(root){
+            if(typeof accent==='string' && accent){
+                root.style.setProperty('--accent', accent, 'important');
+                var dark=shadeHex(accent, 0.82);
+                root.style.setProperty('--accent-dark', dark || accent, 'important');
+            } else {
+                root.style.removeProperty('--accent');
+                root.style.removeProperty('--accent-dark');
+            }
+            // Per-part colour overrides: a sparse { '--var': value } map applied
+            // verbatim. Track what we set so clearing a part removes its inline var
+            // (falling back to --accent / the template default) on the next apply.
+            var vars=(theme.cssVars && typeof theme.cssVars==='object') ? theme.cssVars : {};
+            var applied=[];
+            for(var key in vars){ if(Object.prototype.hasOwnProperty.call(vars,key)){
+                var val=vars[key];
+                if(/^--[a-z][a-z0-9-]*$/.test(key) && typeof val==='string' && val && !/[;{}<>]/.test(val)){
+                    root.style.setProperty(key, val, 'important'); applied.push(key);
+                }
+            }}
+            var prev=window.__v3AppliedVars||[];
+            for(var pi=0;pi<prev.length;pi++){ if(applied.indexOf(prev[pi])===-1) root.style.removeProperty(prev[pi]); }
+            window.__v3AppliedVars=applied;
+        }
+    }
+
+    /* ===== user-added inserts (anchored to a block id) ===== */
+    function styleNode(node, style){
+        if(!node || !style || typeof style!=='object') return;
+        var p; for(p in style){ var css=CSS_PROP[p]; if(css && typeof style[p]==='string' && style[p]) node.style.setProperty(css, style[p]); }
+    }
+    /* Brand-aware link inserts: a pasted 2GIS / Telegram / Instagram / WhatsApp
+       URL renders with that service's icon + brand colour so the button reads as
+       the real thing. Anything else falls back to a generic chain icon on the
+       template's own accent. Mirror of the legacy pipeline in bridge.js. */
+    var INSERT_LINK_ICONS = {
+        '2gis': '<img src="data:image/webp;base64,UklGRqROAABXRUJQVlA4WAoAAAAQAAAA5wMA5wMAQUxQSF4KAAABHMZtGzkS+y97L+f7RcQEoNHaDgrZM7p4u5W99/vBq306vd2OKNtPbK99Neurth1Ltm3bEgRBMAgGQRAcgkFwCGJgEAyCQTAIBsEgCILmo7V4+LtbHY+ImAAItW1Lbb6ELyESkICESPoOKgEJkfAlICESkNC5zTzdtdgRMQHlLpf326H707joy0l+ZfqTLCKyqmpu/z98RhyttVZUdRWR8EeFRVbV2trwOdNaq6pJhP9UREmaW/OpdLSmKsJ/CFiSlmY+t7amq4TnLi5amk+1veoizxqL1u7Tbq8q4QELizbzCdiaLvxcidbhU/Goa3yceMnNJ+Wm8hjxkrtPzk3l+RHtPkdbTeG54VTNp+qR5YmJa/cZ28rCj0rMwyfumvghiXn49F0TPx4hD5/Ey/JkcOo+k1uOD8VSfD7vKz8OQYdP6kUeBak+s4+VHwJOw2d3K+EBCGo+xTe5eaH4PD/SjZPmc/1QvmfSfL435fslzed8U75X0nzeN+X7JM3nflO+R9J8/jfl+xOKY+BIN4fVcbDLnVnNobCGuyLD4VD5joTqiDiW+6HmoNjCvZDhwKg3grNj45C7sJjDY+Y7wNURcsj1W8xBMvO14+o4OeTKiTlU5uuWHS17vGaxO17aesWSOWRWvlpcHDVHvFaxO3CuVyqZQ2fly1QcPXu8RtwdP225QtEcQvX6JEfRyhcnO472cGW4OJJavC7cHUstXZU4HE7XaxLNAbVckeSYWurNkRxV53pjqOPqXG+K4sg6b26I4ti6DDdDcXRdhhthes9Xi5dgek9Yixdges9Yi6c3vaesxZMr7zlr8dSKJ62FEyuOtZ1Pqzjadj6p1fG28yklR9x6Rskxt5xPNNBxPZtoDrvpXLg78MZT6Y68Fk+kOPZ2Pg119G1nsTj+lnOIBkCezoCHQ3A8geYYbHx46ijcjm5xHM7HFgyIfDm07khs4cCyY3E/rsXRWI+KDY5cDqo5Hhsfkjoi1yOKjsnpAnVQss3FyY7K7WjEcXk9Fh7AZOFQ1JG5HUl0bF4PpIOThcNQR+d6FMHgyZeDaI7Pgw9hcYTWI+ABUR4PQB2j2/6CgZQvu6uO0oN3Jo7TurMGVBZ2lRypy64GVHncUXKsbvthAyuX3aijddsLG1z5shN1vB77YAMsT7tQR+yxBzbI8rQDdcwe22MDLU+bU0fttjU22HLZWHLcbhsbwOVxU8mRu2yqQ5eHDYljt26ogJdtJzh6p80ofPXNGHx53Ehy/C4baQBmvIngCJ42kSGsb2JAmMcNLI7heQMVxOx77Ci+fC3BWPlagzHnLwXH8fSlFcjqlzqQOX8lOJKnr6xQVr/Socz5C+xYnr6QwKx8oYKZfcHRfPnYAmf5YxnOxscGnHn4UHA8Xz+0Alr9UAW05UAGaO/jQaIjejuIQlo/SIO094M4po8fEFBrH1hBrX+ggtr7BwzV4lvBUX19K8FaeSvD2nirwZrzO47r8oYAm76xAlt9IwPbeKMBm/NrjuzyUoQ2fSlBW3lJoa291KDNXzJsCy+wY7u8IOCmL6zgVl7I4NZeaOBmLwxw8xcc3eUXgbfllwXe9BeFt/xLgbf2S4O38cuAN//F8Z1/CAAnPwjALT8kgNMfFOYywLUf2t/IjR8M4PwHRzmGuEhEAnECdQnilIj0b+cKxDUian871yHOiMgx/u/oAsgJyT+224bcWlrI6Yq7KeRq6SHXgG4fcqO8pzz/BXGNuZH/+C8otzHX+I//+I//iGgXc53/+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//+I//1sq8xVzjP/7jvzVT25gb+c/Phpgr/LdabR9zvXT+y6EKckr6r+cSyAnJP7aLIBeIQI7+jq5DXCeiBnEN6grEFSJSiFOoSxCXiEggTqCOIY6JiCCO/t8Azn5oANfALgNc/kEBTn9IAJd+EICTHwLAhR8I4Ohng7fxS4O39kuBt/KLwpv+kuBt+UXgTX5heKPf0c1eaODWXijgll9QcFtfWMBNXojgxi8Qthm92qGtvVShLb+k0JZeEmiTlxja6HUDtv5GA7byhgLb+sYCbPIGAxu9O2CtvVVhLb+1wlp6S2AtvEWoNsr/G6iVAyiorQcQUIsHIEwzOmSDtPoRhbT0EYG08BFCtEGfrYBWPrQC2vKhAGj8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" alt="" width="20" height="20" style="display:block;width:20px;height:20px;border-radius:5px" />',
+        telegram: '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>',
+        whatsapp: '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.86 9.86 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>',
+        instagram: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>',
+        link: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>'
+    };
+    var INSERT_LINK_THEMES = {
+        '2gis': { bg:'#ffffff', fg:'#1a1a1a', border:'1px solid rgba(0,0,0,0.12)', label:'2GIS' },
+        telegram: { bg:'#2AABEE', label:'Telegram' },
+        whatsapp: { bg:'#25D366', label:'WhatsApp' },
+        instagram: { bg:'linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)', label:'Instagram' },
+        link: { bg:'var(--accent,#173f33)', label:'Сілтеме' }
+    };
+    function detectLinkPlatform(url){
+        var u=String(url||'').toLowerCase();
+        if(u.indexOf('2gis.')!==-1 || u.indexOf('go.2gis')!==-1) return '2gis';
+        if(u.indexOf('t.me/')!==-1 || u.indexOf('telegram.me')!==-1 || u.indexOf('telegram.org')!==-1 || u.indexOf('tg:')===0) return 'telegram';
+        if(u.indexOf('wa.me/')!==-1 || u.indexOf('whatsapp.com')!==-1 || u.indexOf('api.whatsapp')!==-1) return 'whatsapp';
+        if(u.indexOf('instagram.com')!==-1 || u.indexOf('instagr.am')!==-1) return 'instagram';
+        return 'link';
+    }
+    function createInsertNode(ins, lang){
+        var node = null;
+        if(ins.type==='text' && ins.text){
+            node=document.createElement('div'); node.textContent=String(ins.text);
+            node.style.cssText='margin:24px auto;max-width:min(calc(100% - 32px),340px);text-align:center;white-space:pre-line;';
+            styleNode(node, ins.style);
+        } else if(ins.type==='image' && ins.image){
+            node=document.createElement('figure'); node.style.cssText='margin:24px auto;max-width:min(calc(100% - 32px),340px);display:block;';
+            var img=document.createElement('img'); img.src=String(ins.image); img.alt=''; img.loading='lazy';
+            img.style.cssText='display:block;width:100%;height:auto;border-radius:12px;object-fit:cover;'; node.appendChild(img);
+        } else if(ins.type==='link' && ins.url){
+            node=document.createElement('div'); node.style.cssText='margin:24px auto;text-align:center;max-width:calc(100% - 32px);';
+            var plat=detectLinkPlatform(ins.url); var thm=INSERT_LINK_THEMES[plat]||INSERT_LINK_THEMES.link;
+            var a=document.createElement('a'); a.href=safeHref(ins.url)||'#'; a.target='_blank'; a.rel='noopener noreferrer';
+            a.style.cssText='display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:'+thm.bg+';color:'+(thm.fg||'#fff')+';border:'+(thm.border||'0')+';font:700 15px/1 Inter,Arial,sans-serif;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,0.16);max-width:100%;';
+            var ic=document.createElement('span'); ic.style.cssText='display:inline-flex;flex:0 0 auto;width:20px;height:20px;align-items:center;justify-content:center'; ic.innerHTML=INSERT_LINK_ICONS[plat]||INSERT_LINK_ICONS.link; a.appendChild(ic);
+            var lb=document.createElement('span'); lb.textContent=String(ins.label||'').trim()||thm.label; lb.style.cssText='overflow:hidden;text-overflow:ellipsis;white-space:nowrap'; a.appendChild(lb);
+            styleNode(a, ins.style); node.appendChild(a);
+        } else if(ins.type==='language-switch'){
+            node=document.createElement('div');
+            node.setAttribute('role','group'); node.setAttribute('aria-label','Invitation language');
+            node.style.cssText='margin:0;display:inline-flex;align-items:center;gap:6px;padding:5px 7px;color:#fff;font:700 12px/1.2 Inter,Arial,sans-serif;letter-spacing:.08em;white-space:nowrap;filter:drop-shadow(0 1px 3px rgba(0,0,0,.55));border-radius:8px;';
+            var activeLang=String(lang||'').toLowerCase()==='ru'?'ru':'kk';
+            function addLanguageButton(code,label,separator){
+                if(separator){var slash=document.createElement('span');slash.textContent='/';slash.setAttribute('aria-hidden','true');slash.style.cssText='opacity:.5;font-weight:400';node.appendChild(slash);}
+                var button=document.createElement('button');button.type='button';button.textContent=label;button.setAttribute('data-invite-language',code);button.setAttribute('aria-pressed',activeLang===code?'true':'false');
+                button.style.cssText='appearance:none;background:transparent;border:0;padding:2px;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;opacity:'+(activeLang===code?'1':'.58')+';text-decoration:'+(activeLang===code?'underline':'none')+';text-underline-offset:3px;';
+                button.addEventListener('click',function(event){event.preventDefault();event.stopPropagation();try{(window.parent||window).postMessage({type:'TOI_INVITE_LANGUAGE_CHANGE',lang:code},'*');}catch(_){}});
+                node.appendChild(button);
+            }
+            addLanguageButton('kk','ҚАЗ',false);addLanguageButton('ru','РУС',true);styleNode(node,ins.style);
+        }
+        if(node){ node.setAttribute('data-v3-insert',''); node.setAttribute('data-v3-insert-id', String(ins.id||'')); node.setAttribute('data-v3-insert-type',String(ins.type||'')); }
+        return node;
+    }
+    function placeCanvasInsert(node,ins){
+        var layout=ins&&ins.layout;
+        if(!layout)return false;
+        var relative=layout.anchorX!=null&&layout.anchorY!=null;
+        var x=Number(relative?layout.anchorX:layout.canvasX),y=Number(relative?layout.anchorY:layout.canvasY);
+        if(!isFinite(x)||!isFinite(y))return false;
+        x=Math.max(0,Math.min(1,x));
+        var host=null;
+        if(relative){
+            y=Math.max(0,Math.min(1,y));
+            var target=findFlowAnchor(ins.anchorId);
+            host=target&&(target.hasAttribute&&target.hasAttribute('data-edit-container')?target:
+                (target.closest&&target.closest('[data-edit-container]')));
+            if(!host)return false;
+            var hostPosition='';try{hostPosition=window.getComputedStyle(host).position||'';}catch(_){}
+            if(hostPosition==='static'||!hostPosition){host.style.setProperty('position','relative');host.setAttribute('data-v3-free-host','1');}
+        } else {
+            y=Math.max(0,Math.min(20000,y));
+            host=document.body||document.documentElement;
+        }
+        if(!host)return false;
+        host.appendChild(node);
+        node.setAttribute('data-v3-canvas','1');
+        node.setAttribute('data-v3-placement','free');
+        node.setAttribute('data-v3-free-coordinate-space',relative?'section':'legacy-page');
+        node.style.setProperty('position','absolute','important');
+        node.style.setProperty('left',(Math.round(x*10000)/100)+'%','important');
+        node.style.setProperty('top',relative?(Math.round(y*10000)/100)+'%':Math.round(y)+'px','important');
+        node.style.setProperty('margin','0','important');
+        node.style.setProperty('transform','translate(-50%,-50%)','important');
+        node.style.setProperty('z-index','10','important');
+        node.style.setProperty('max-width','min(86vw,340px)','important');
+        if(ins.type==='image')node.style.setProperty('width','min(72vw,340px)','important');
+        else node.style.setProperty('width','max-content','important');
+        return true;
+    }
+    function findFlowAnchor(id){
+        var token=String(id||'').replace(/[^A-Za-z0-9_-]/g,'');if(!token)return null;
+        try{return document.querySelector('[data-edit-id="'+token+'"],[data-v3-flow-anchor-id="'+token+'"],[data-v3-insert-id="'+token+'"]');}catch(_){return null;}
+    }
+    function applyInserts(doc, lang){
+        var prev=document.querySelectorAll('[data-v3-insert]');
+        for(var p=0;p<prev.length;p++) prev[p].remove();
+        var inserts=(doc && Array.isArray(doc.inserts)) ? doc.inserts : [];
+        var afterRefs={},pending=inserts.slice(),passes=0;
+        // An insert may now be anchored to another insert. Resolve in waves so
+        // forward references preserve the canonical array order; malformed
+        // cycles simply remain unresolved instead of corrupting the DOM.
+        while(pending.length&&passes<=inserts.length){
+            passes++;
+            var ready=[],next=[];
+            for(var i=0;i<pending.length;i++){
+                var candidate=pending[i];if(!candidate||!candidate.anchorId)continue;
+                var layout=candidate.layout||{};
+                var legacyCanvas=layout.canvasX!=null&&layout.canvasY!=null;
+                var target=legacyCanvas?null:findFlowAnchor(candidate.anchorId);
+                if(legacyCanvas||(target&&target.parentNode))ready.push({ins:candidate,anchor:target});
+                else next.push(candidate);
+            }
+            if(!ready.length)break;
+            for(i=0;i<ready.length;i++){
+                var ins=ready[i].ins,anchor=ready[i].anchor,node=createInsertNode(ins,lang);if(!node)continue;
+                node.setAttribute('data-v3-anchor-id',String(ins.anchorId));
+                if(!placeCanvasInsert(node,ins)){
+                    node.setAttribute('data-v3-flow','1');
+                    node.setAttribute('data-v3-placement','flow');
+                    if(ins.position==='before'){anchor.parentNode.insertBefore(node,anchor);}
+                    else {var ref=afterRefs[ins.anchorId]||anchor;ref.parentNode.insertBefore(node,ref.nextSibling);afterRefs[ins.anchorId]=node;}
+                }
+                applyBlockLayout(node,ins.layout||null,ins.style||null);
+                if(ins.hidden===true){node.style.display='none';node.setAttribute('data-v3-hidden','1');}
+                if(ins.locked===true)node.setAttribute('data-v3-locked','1');
+                if(ins.groupId)node.setAttribute('data-v3-group-id',String(ins.groupId));
+            }
+            pending=next;
+        }
+    }
+
+    /* ===== cover self-heal (v3-converted templates missing data-bind="cover") =====
+       Several templates kept their hero placeholder (#heroPhoto / .hero-photo-placeholder)
+       but lost the data-bind="cover" hook in the v3 conversion, so existing invites with a
+       saved previewPhotoUrl rendered an empty hero. Mark the standard hero placeholder as the
+       cover (run BEFORE applyBinds so the SAME pass fills it via applyImage). Attribute-only,
+       no saved-data change; also lets the editor recognise it for tap-to-replace. */
+    function ensureCover(){
+        if(document.querySelector('[data-bind="cover"]')) return;   // native hook present
+        var t=document.getElementById('heroPhoto')
+            ||document.getElementById('heroPhotoImg')
+            ||document.querySelector('.hero-photo-img')
+            ||document.querySelector('.hero-photo-placeholder')
+            ||document.querySelector('.hero-photo');
+        if(t) t.setAttribute('data-bind','cover');
+    }
+
+    /* ===== music play/pause (works in editor + public) =====
+       Self-healing across the whole v3 catalogue. Many templates were converted to
+       v3 without a working player: some have NO <audio>/button at all, others ship a
+       legacy control (.music-toggle / .m-ctrl / #musicToggle, sometimes hidden) that
+       the v3 renderer never wired. The LEGACY pipeline injected a fallback player at
+       runtime; the v3 pipeline didn't — so existing invites with a saved track went
+       silent. setupMusic restores them WITHOUT touching saved data: it finds (or
+       creates) an <audio>, wires every recognized control (un-hiding it), and only
+       when none exists drops in a self-contained floating button. */
+    function wireAudioOnce(audio){
+        if(audio.__v3wired) return; audio.__v3wired=true;
+        audio.addEventListener('timeupdate', function(){
+            if(musicClip.end && audio.currentTime>=musicClip.end){ audio.pause(); try{ audio.currentTime=musicClip.start||0; }catch(_){} }
+        });
+    }
+    function wireMusicBtn(btn, audio){
+        if(!btn || btn.__v3music) return; btn.__v3music=true;
+        // reveal a control the template hid behind its (now-absent) own JS, and drop a
+        // legacy inline onclick="toggleMusic()" that would just throw in v3.
+        btn.classList.remove('is-hidden','hidden','music-toggle--hidden');
+        if(btn.style && btn.style.display==='none') btn.style.display='';
+        btn.removeAttribute('onclick');
+        btn.addEventListener('click', function(e){
+            if(e&&e.preventDefault) e.preventDefault(); if(e&&e.stopPropagation) e.stopPropagation();
+            if(!audio.getAttribute('src')) return;
+            if(audio.paused){ try{ if(musicClip.start) audio.currentTime=musicClip.start; }catch(_){} var p=audio.play(); if(p&&p.catch) p.catch(function(){}); }
+            else audio.pause();
+        });
+        audio.addEventListener('play', function(){ btn.classList.add('is-playing','playing'); });
+        audio.addEventListener('pause', function(){ btn.classList.remove('is-playing','playing'); });
+    }
+    function setupMusic(doc){
+        var music=(doc&&doc.media&&doc.media.music)||null;
+        var url=music&&music.url?String(music.url):'';
+        musicClip.start=Number(music&&music.startAt)||0;
+        musicClip.end=Number(music&&music.endAt)||0;
+
+        var audio=document.getElementById('audioEl')||document.querySelector('audio[data-bind="music"]')||document.querySelector('audio');
+        if(!audio && url){
+            audio=document.createElement('audio'); audio.id='audioEl'; audio.setAttribute('data-bind','music');
+            audio.preload='auto'; audio.style.display='none';
+            (document.body||document.documentElement).appendChild(audio);
+        }
+        if(audio){ if(url && audio.getAttribute('src')!==url) audio.setAttribute('src',url); wireAudioOnce(audio); }
+
+        var NATIVE_MUSIC_SEL='#musicBtn,.music-btn,.music-toggle,.m-ctrl,#musicToggle';
+        var fb=document.getElementById('__v3FallbackMusicBtn');
+        if(!url || !audio){
+            // No track: the RENDERER owns music-control visibility, so a template can author the
+            // control plainly (no is-hidden) and it just stays hidden until a track is set. (Was:
+            // "leave native UI as authored" — which left a dead, unwired button on track-less invites.)
+            var none=document.querySelectorAll(NATIVE_MUSIC_SEL);
+            for(var n=0;n<none.length;n++) none[n].style.display='none';
+            if(fb) fb.style.display='none';
+            return;
+        }
+
+        var ctrls=document.querySelectorAll(NATIVE_MUSIC_SEL), wiredAny=false, i;
+        for(i=0;i<ctrls.length;i++){ ctrls[i].style.display=''; wireMusicBtn(ctrls[i], audio); wiredAny=true; }
+        if(wiredAny){ if(fb) fb.style.display='none'; return; }
+
+        // no native control anywhere -> self-contained floating button.
+        if(!fb){
+            fb=document.createElement('button'); fb.type='button'; fb.id='__v3FallbackMusicBtn'; fb.setAttribute('aria-label','Music');
+            fb.innerHTML='<svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;display:block"><path d="M8 5v14l11-7z"/></svg>';
+            fb.style.cssText='position:fixed;right:16px;bottom:16px;z-index:9999;width:54px;height:54px;border-radius:50%;border:1px solid rgba(255,255,255,0.28);background:rgba(20,20,20,0.62);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,0.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);cursor:pointer;padding:0;';
+            (document.body||document.documentElement).appendChild(fb);
+        } else { fb.style.display='flex'; }
+        wireMusicBtn(fb, audio);
+    }
+
+    /* ===== view-only ambient behaviour (auto-scroll + music auto-start) =====
+       The legacy pipeline (applyTemplateEnhancements) drove a slow auto-pan of the
+       invite and started the music on the guest's first interaction. The v3 pipeline
+       dropped it, so converted templates stopped auto-scrolling / auto-starting music.
+       Re-added here, PUBLIC VIEW ONLY (skipped whenever the edit layer is present).
+       Note: browsers block sound before any gesture, so music starts on the first
+       tap/scroll — exactly as the legacy build did. */
+    function isEditorSurface(){
+        return !!(window.__V3_EDIT_INSTALLED || (document.documentElement && document.documentElement.hasAttribute('data-v3-edit')));
+    }
+    function startAutoScroll(){
+        if(window.__TOI_NO_AUTOSCROLL) return;   // host switched the auto-pan off for this invite
+        if(window.__V3_SCROLL_STARTED) return; window.__V3_SCROLL_STARTED=true;
+        var SPEED=Number(window.__TOI_AUTOSCROLL_SPEED);
+        if(!isFinite(SPEED)||SPEED<=0) SPEED=60;
+        var THRESH=8, scrolling=true, removed=false, startY=0, lastFrameAt=0, targetY=window.scrollY||0;
+        function rm(){ if(removed) return; removed=true;
+            document.removeEventListener('touchstart',onTS); document.removeEventListener('touchmove',onTM);
+            document.removeEventListener('wheel',stop); document.removeEventListener('keydown',stop); }
+        function stop(){ if(!scrolling) return; scrolling=false; rm(); }
+        function onTS(e){ var t=e&&e.touches&&e.touches[0]; startY=t?t.clientY:0; }
+        function onTM(e){ var t=e&&e.touches&&e.touches[0]; if(!t) return; if(Math.abs(t.clientY-startY)>=THRESH) stop(); } // a tap (primes audio) keeps panning; only a real drag stops it
+        function step(now){ if(!scrolling) return;
+            var maxY=document.documentElement.scrollHeight-window.innerHeight;
+            if(window.scrollY>=maxY){ stop(); return; }
+            // behavior:instant overrides the template html scroll-behavior:smooth rule
+            // (present in nearly every template). Without it, each per-frame scrollTo
+            // queues a competing smooth animation, so the pan crawls to a near-halt and
+            // fights the guest's own swipes -- matches the legacy applyTemplateEnhancements
+            // auto-pan, which passes the same behavior for exactly this reason.
+            var elapsed=lastFrameAt ? Math.min(50,Math.max(0,now-lastFrameAt)) : (1000/60);
+            lastFrameAt=now;
+            targetY+=SPEED*elapsed/1000;
+            window.scrollTo({ top: targetY, behavior: 'instant' }); window.requestAnimationFrame(step); }
+        function begin(pause){
+            document.addEventListener('touchstart',onTS,{passive:true});
+            document.addEventListener('touchmove',onTM,{passive:true});
+            document.addEventListener('wheel',stop,{passive:true});
+            document.addEventListener('keydown',stop);
+            setTimeout(function(){ window.requestAnimationFrame(step); }, pause);
+        }
+        // Hold the auto-pan behind an unopened intro envelope. Without this the page
+        // scrolled BEHIND the closed envelope, so it was already mid-invite on open.
+        // After opening, pause ~0.5s so the invite sits still for a beat first.
+        var intro=document.querySelector('[data-toi-intro]');
+        if(intro && !window.__toiIntroOpened){
+            window.addEventListener('toi:intro-opened', function(){ begin(500); }, { once:true });
+        } else {
+            begin(1200);
+        }
+    }
+    function armAutoplay(){
+        if(window.__V3_AUTOPLAY_ARMED) return;
+        var audio=document.getElementById('audioEl')||document.querySelector('audio[data-bind="music"]')||document.querySelector('audio');
+        if(!audio||!audio.getAttribute('src')) return;
+        window.__V3_AUTOPLAY_ARMED=true;
+        var done=false;
+        // BUBBLE phase (not capture): the music button's own click stops propagation,
+        // so a tap ON the button is handled only by the button — this never fights it.
+        function play(){ if(done) return; if(!audio.paused){ done=true; rm(); return; }
+            try{ if(musicClip.start) audio.currentTime=musicClip.start; }catch(_){}
+            var p=audio.play(); if(p&&p.then){ p.then(function(){ done=true; rm(); }).catch(function(){}); } }
+        function rm(){ document.removeEventListener('click',play); document.removeEventListener('touchstart',play); document.removeEventListener('scroll',play); }
+        document.addEventListener('click',play,{passive:true});
+        document.addEventListener('touchstart',play,{passive:true});
+        document.addEventListener('scroll',play,{passive:true});
+        play(); // optimistic; succeeds if the browser already allows it, else waits for the gesture
+    }
+
+    /* ===== public entrypoint ===== */
+    window.__APPLY_INVITE_V3=function(payload){
+        var doc=(payload&&payload.doc)||payload||{};
+        var lang=normalizeLang((payload&&payload.lang)||(document.documentElement&&document.documentElement.lang));
+        if(document.documentElement) document.documentElement.lang=lang;
+        try { assignSectionContracts(); } catch(e){ if(window.console) console.error('v3 assignSectionContracts', e); }
+        try { assignDateEditIds(); } catch(e){ if(window.console) console.error('v3 assignDateEditIds', e); }
+        try { assignFlowAnchorIds(); } catch(e){ if(window.console) console.error('v3 assignFlowAnchorIds', e); }
+        try { applyContent(doc, lang); } catch(e){ if(window.console) console.error('v3 applyContent', e); }
+        try { applyBlockOrder(doc); } catch(e){ if(window.console) console.error('v3 applyBlockOrder', e); }
+        try { ensureCover(); } catch(e){ if(window.console) console.error('v3 ensureCover', e); }
+        try { applyBinds(doc, lang); } catch(e){ if(window.console) console.error('v3 applyBinds', e); }
+        try { applyTheme(doc); } catch(e){ if(window.console) console.error('v3 applyTheme', e); }
+        try { applyInserts(doc, lang); } catch(e){ if(window.console) console.error('v3 applyInserts', e); }
+        try { setupMusic(doc); } catch(e){ if(window.console) console.error('v3 setupMusic', e); }
+        try { refreshScrollReveals(); } catch(e){ if(window.console) console.error('v3 scroll reveals', e); }
+    };
+
+    function initViewBehaviors(){
+        if(window.__V3_VIEW_INIT) return; window.__V3_VIEW_INIT=true;
+        if(isEditorSurface()) return;   // editor: no auto-pan / auto-start
+        try { armAutoplay(); } catch(e){ if(window.console) console.error('v3 armAutoplay', e); }
+        try { startAutoScroll(); } catch(e){ if(window.console) console.error('v3 startAutoScroll', e); }
+    }
+    function boot(){
+        var initial=window.__INVITE_V3||null;
+        if(initial) window.__APPLY_INVITE_V3(initial);
+        // run once the template is fully loaded; defer a tick so the edit layer (if any)
+        // has installed and isEditorSurface() reads true in the editor.
+        if(document.readyState==='complete') setTimeout(initViewBehaviors,0);
+        else window.addEventListener('load', function(){ setTimeout(initViewBehaviors,0); }, { once:true });
+    }
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', boot);
+    else boot();
+
+})();
+</script>
+
+
+<script>
+(function(){
+    if (window.__RSVP_FIELDS_APPLIER) return;
+    // Booleans only, so this is <script>-safe.
+    var CFG = {};
+
+    var FIELD_INPUT = { phone: 'rPhone', note: 'rNote', guests: 'rGuests' };
+    // Label id conventions templates use INSTEAD of a for="" binding, e.g.
+    // #rPhoneLabel / #rGuestsLabel on a label/div/span with no for="".
+    var LABEL_IDS = {
+        phone: ['rPhoneLabel', 'phoneLabel'],
+        note: ['rNoteLabel', 'noteLabel'],
+        guests: ['rGuestsLabel', 'guestsLabel']
+    };
+    // Preferred per-field wrapper id, then a generic per-field container.
+    var PREFERRED_WRAP = { note: 'noteWrap', guests: 'rGuestsField' };
+    var WRAP_SEL = '.form-group, .field, .rsvp-field, .form-field, .form-row, .rsvp-row, .input-group, .input-wrap, .note-wrap, .guests-field';
+
+    var hideEl = function(el) { if (el) el.style.setProperty('display', 'none', 'important'); };
+    var showEl = function(el) {
+        if (!el) return;
+        if (el.classList) el.classList.remove('is-hidden');
+        // Only clear an explicit "display:none" so we never wipe a visible display.
+        var d = (el.style && el.style.getPropertyValue) ? el.style.getPropertyValue('display') : (el.style ? el.style.display : '');
+        if (d === 'none') el.style.removeProperty('display');
+    };
+
+    var collectLabels = function(kind, input) {
+        var out = [];
+        var push = function(el) { if (el && out.indexOf(el) === -1) out.push(el); };
+        try {
+            var byFor = document.querySelectorAll('label[for="' + FIELD_INPUT[kind] + '"]');
+            for (var i = 0; i < byFor.length; i++) push(byFor[i]);
+        } catch (_) { /* bad selector — ignore */ }
+        (LABEL_IDS[kind] || []).forEach(function(lid) { push(document.getElementById(lid)); });
+        // A label-like element right before the input, bound by neither for="" nor
+        // a known id (e.g. a .form-group > label.f-label).
+        if (input) {
+            var prev = input.previousElementSibling;
+            var guard = 0;
+            while (prev && guard++ < 3) {
+                var cls = (prev.getAttribute && prev.getAttribute('class')) || prev.className || '';
+                if (prev.tagName === 'LABEL' || /label/i.test(String(cls))) { push(prev); prev = prev.previousElementSibling; }
+                else break;
+            }
+        }
+        return out;
+    };
+
+    var fieldWrapper = function(kind, input) {
+        var pref = PREFERRED_WRAP[kind] ? document.getElementById(PREFERRED_WRAP[kind]) : null;
+        if (pref) return pref;
+        if (!input || !input.closest) return null;
+        var w;
+        try { w = input.closest(WRAP_SEL); } catch (_) { w = null; }
+        if (!w) return null;
+        // Never collapse a wrapper that also holds an always-on control.
+        var holdsCritical = w.querySelector('#rName')
+            || w.querySelector('input[name="attendance"]')
+            || w.querySelector('.submit-btn, .btn-submit, .submit, [type="submit"], #rsvpSubmitBtn');
+        return holdsCritical ? null : w;
+    };
+
+    var setField = function(kind, show) {
+        var input = document.getElementById(FIELD_INPUT[kind]);
+        var wrap = fieldWrapper(kind, input);
+        var labels = collectLabels(kind, input);
+        if (show) {
+            if (kind === 'phone' && input && input.type === 'hidden') { input.type = 'tel'; input.setAttribute('inputmode', 'tel'); }
+            if (kind === 'guests' && input && input.type === 'hidden') { input.type = 'number'; input.setAttribute('inputmode', 'numeric'); }
+            showEl(wrap); showEl(input);
+            labels.forEach(showEl);
+        } else {
+            // A display:none input still submits its value (only a disabled input
+            // is excluded), so guests still posts "1" while hidden.
+            hideEl(wrap); hideEl(input);
+            labels.forEach(hideEl);
+            if (kind === 'guests' && input && !input.value) input.value = '1';
+        }
+    };
+
+    // "−" / "+" guest steppers. Templates render them as
+    // <button class="qty-btn" data-qty="1|-1"> with NO inline onclick, and nothing
+    // else in the app ever bound them — so the buttons were dead both in the editor
+    // preview and on the published invite. Delegated (survives a re-render) and it
+    // defers to window.changeGuests when injectRsvp installed it, so the per-invite
+    // max-guests cap still applies on the public page.
+    var stepGuests = function(delta) {
+        if (typeof window.changeGuests === 'function') { window.changeGuests(delta); return; }
+        var input = document.getElementById(FIELD_INPUT.guests);
+        if (!input) return;
+        var min = parseInt(input.getAttribute('min'), 10);
+        if (isNaN(min)) min = 1;
+        var max = parseInt(input.getAttribute('max'), 10);
+        var next = (parseInt(input.value, 10) || min) + delta;
+        if (next < min) next = min;
+        if (!isNaN(max) && max > 0 && next > max) next = max;
+        input.value = String(next);
+        try {
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+        } catch (_) { /* older browsers — the value is already set */ }
+    };
+
+    document.addEventListener('click', function(ev) {
+        var btn = (ev.target && ev.target.closest) ? ev.target.closest('[data-qty]') : null;
+        if (!btn) return;
+        var delta = parseInt(btn.getAttribute('data-qty'), 10);
+        if (!delta) return;
+        // type="button" already, but a template may drop it — never submit the form.
+        ev.preventDefault();
+        stepGuests(delta);
+    });
+
+    var apply = function() {
+        if (typeof CFG.phone === 'boolean') setField('phone', CFG.phone);
+        if (typeof CFG.note === 'boolean') setField('note', CFG.note);
+        if (typeof CFG.guests === 'boolean') setField('guests', CFG.guests);
+    };
+    window.__RSVP_FIELDS_APPLIER = apply;
+
+    var normalize = function(fields) {
+        var out = {};
+        if (fields && typeof fields === 'object') {
+            ['phone', 'guests', 'note'].forEach(function(k) { if (typeof fields[k] === 'boolean') out[k] = fields[k]; });
+        }
+        return out;
+    };
+
+    if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', apply);
+    else apply();
+
+    window.addEventListener('message', function(ev) {
+        var msg = ev && ev.data;
+        if (!msg || typeof msg !== 'object') return;
+        if (msg.type === 'SET_RSVP_FIELDS') { CFG = normalize(msg.fields); apply(); }
+        // A re-render (v3 APPLY_V3 or legacy UPDATE_CONFIG) rewrites label TEXT;
+        // re-assert visibility a tick later so it can't resurrect a hidden field.
+        else if (msg.type === 'APPLY_V3' || msg.type === 'UPDATE_CONFIG') { setTimeout(apply, 0); }
+    });
+})();
+</script>
+
+<script>
+(function(){
+    // Paste the Google Apps Script "Web app" /exec URL here after deploying it
+    // (see the RSVP setup instructions) — until then submissions are logged only.
+    var RSVP_ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE";
+
+    var group = new URLSearchParams(window.location.search).get('group') || '';
+
+    var form = document.getElementById('rsvpForm');
+    var successMsg = document.getElementById('successMsg');
+    if (!form) return;
+
+    form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+
+        var name = (document.getElementById('rName').value || '').trim();
+        if (!name) { document.getElementById('rName').focus(); return; }
+
+        var attendanceInput = form.querySelector('input[name="attendance"]:checked');
+        var payload = {
+            group: group,
+            name: name,
+            attendance: attendanceInput ? attendanceInput.value : '',
+            guests: (document.getElementById('rGuests') || {}).value || '',
+            phone: (document.getElementById('rPhone') || {}).value || '',
+            note: (document.getElementById('rNote') || {}).value || '',
+            page: window.location.href
+        };
+
+        var submitBtn = document.getElementById('rsvpSubmitBtn');
+        if (submitBtn) { submitBtn.disabled = true; }
+
+        function showSuccess(){
+            form.style.display = 'none';
+            if (successMsg) successMsg.style.display = 'block';
+        }
+
+        if (!RSVP_ENDPOINT || RSVP_ENDPOINT.indexOf('PASTE_YOUR') === 0) {
+            // Backend not wired up yet — don't lose the guest's answer, and don't
+            // pretend it was saved either.
+            console.warn('RSVP_ENDPOINT is not configured yet; response was not sent.', payload);
+            if (submitBtn) { submitBtn.disabled = false; }
+            return;
+        }
+
+        // no-cors + text/plain: Apps Script web apps don't handle CORS preflight,
+        // so this avoids the OPTIONS request entirely. We can't read the response,
+        // so we treat "the request went out" as success.
+        fetch(RSVP_ENDPOINT, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+        }).then(showSuccess).catch(showSuccess);
+    });
+})();
+</script>
+
+</body></html>
