@@ -1702,7 +1702,7 @@
         // After opening, pause ~0.5s so the invite sits still for a beat first.
         var intro=document.querySelector('[data-toi-intro]');
         if(intro && !window.__toiIntroOpened){
-            window.addEventListener('toi:intro-opened', function(){ begin(1000); }, { once:true });
+            window.addEventListener('toi:intro-opened', function(){ begin(2000); }, { once:true });
         } else {
             begin(1200);
         }
