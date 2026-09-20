@@ -97,6 +97,16 @@
     .map-btn:hover{border-color:var(--accent);background:rgba(184,137,139,0.1);}
     .dresscode-img{display:block;width:100%;max-width:320px;margin:22px auto 0;}
 
+    /* ---------------- CHILDHOOD PHOTO SLIDER (Swiper coverflow) ---------------- */
+    .childhood{padding:48px 0 44px;}
+    .childhood .loc-inner{padding:0 24px;}
+    .childhood-swiper{margin-top:26px;padding:20px 0 34px;}
+    .childhood-swiper .swiper-slide{width:210px;aspect-ratio:4/5;border-radius:16px;overflow:hidden;
+      box-shadow:0 18px 40px rgba(58,42,44,0.22);background:var(--paper-base);}
+    .childhood-swiper .swiper-slide img{width:100%;height:100%;object-fit:cover;display:block;}
+    .childhood-swiper .swiper-pagination-bullet{background:var(--ink-mute);opacity:0.4;}
+    .childhood-swiper .swiper-pagination-bullet-active{background:var(--accent);opacity:1;}
+
     /* ---------------- PROGRAM / TIMING (our line icons in rings) ---------------- */
     .timing{padding:48px 24px 32px;}
     .timing-rows{margin-top:22px;}
@@ -296,7 +306,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700;800&amp;family=DM+Serif+Display&amp;family=Lora:wght@400;500;600;700&amp;family=Marcellus&amp;family=Inter:wght@300;400;500;600;700&amp;family=Jost:wght@300;400;500;600;700&amp;family=Outfit:wght@300;400;500;600;700;800&amp;family=Nunito:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;family=Didact+Gothic&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Golos+Text:wght@400;500;600;700;800;900&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tenor+Sans&amp;family=Yeseva+One&amp;display=swap">
 
-<script>window.__TOI_AUTOSCROLL_SPEED = 60;</script><style id="__v3-scroll-reveal">[data-toi-auto-reveal]{opacity:0;translate:0 30px;transition:none;will-change:opacity,translate}[data-toi-auto-reveal][data-toi-reveal-ready]{transition:opacity 760ms cubic-bezier(.22,1,.36,1),translate 760ms cubic-bezier(.22,1,.36,1);transition-delay:var(--toi-reveal-delay,0ms)}[data-toi-auto-reveal].toi-reveal-visible{opacity:1;translate:0 0}@media(prefers-reduced-motion:reduce){[data-toi-auto-reveal]{opacity:1;translate:none;transition:none;will-change:auto}}</style></head>
+<script>window.__TOI_AUTOSCROLL_SPEED = 60;</script><style id="__v3-scroll-reveal">[data-toi-auto-reveal]{opacity:0;translate:0 30px;transition:none;will-change:opacity,translate}[data-toi-auto-reveal][data-toi-reveal-ready]{transition:opacity 760ms cubic-bezier(.22,1,.36,1),translate 760ms cubic-bezier(.22,1,.36,1);transition-delay:var(--toi-reveal-delay,0ms)}[data-toi-auto-reveal].toi-reveal-visible{opacity:1;translate:0 0}@media(prefers-reduced-motion:reduce){[data-toi-auto-reveal]{opacity:1;translate:none;transition:none;will-change:auto}}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></head>
 <body>
   <section class="inv-opening-cover" id="coverScreen" tabindex="0" aria-label="Шақыртуды ашу">
     <div class="inv-opening-envelope">
@@ -369,6 +380,31 @@
               <img src="./images/2gis-icon.png" width="16" height="16" alt="" aria-hidden="true" style="border-radius:4px;">
               <span id="mapBtnLabel" data-edit-id="map-label" data-kk="2ГИС-те ашу" data-ru="Открыть в 2ГИС" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">2ГИС-те ашу</span>
             </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 1.5: childhood photos -->
+    <div class="painted">
+      <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section childhood" data-block="childhood" data-edit-id="sec-childhood" data-edit-container="">
+          <div class="loc-inner toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div class="loc-title" id="childhoodTitle" data-edit-id="childhood-title" data-kk="Балалық шақ" data-ru="Детство" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Балалық шақ</div>
+            <div class="loc-sub" id="childhoodSub" data-edit-id="childhood-sub" data-kk="Есте қалған сәттер" data-ru="Памятные моменты" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Есте қалған сәттер</div>
+          </div>
+          <div class="swiper childhood-swiper toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/childhood/childhood-1.jpeg" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./images/childhood/childhood-2.jpeg" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./images/childhood/childhood-3.jpeg" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./images/childhood/childhood-4.jpeg" alt="" loading="lazy"></div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
 
@@ -1928,6 +1964,27 @@
             body: JSON.stringify(payload)
         }).then(showSuccess).catch(showSuccess);
     });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+(function(){
+    if (typeof Swiper === 'undefined') return;
+    var childhoodSwiper = new Swiper('.childhood-swiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        observer: true,
+        observeParents: true,
+        coverflowEffect: { rotate: 30, stretch: 0, depth: 120, modifier: 1, slideShadows: true },
+        pagination: { el: '.childhood-swiper .swiper-pagination', clickable: true }
+    });
+    // Belt-and-suspenders: if fonts/layout settle after Swiper measures the
+    // container, force one more recalculation once everything is definitely ready.
+    window.addEventListener('load', function(){ setTimeout(function(){ childhoodSwiper.update(); }, 50); });
 })();
 </script>
 
