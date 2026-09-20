@@ -95,7 +95,7 @@
     .map-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:11px 26px;border:1px solid var(--rule);border-radius:999px;
       background:transparent;color:var(--ink);text-decoration:none;font-family:var(--font-body);font-style:italic;font-size:16px;transition:border-color .15s,background-color .15s;}
     .map-btn:hover{border-color:var(--accent);background:rgba(184,137,139,0.1);}
-    .dresscode-img{display:block;width:100%;max-width:320px;margin:22px auto 0;border-radius:16px;box-shadow:0 18px 40px rgba(58,42,44,0.16);}
+    .dresscode-img{display:block;width:100%;max-width:320px;margin:22px auto 0;}
 
     /* ---------------- PROGRAM / TIMING (our line icons in rings) ---------------- */
     .timing{padding:48px 24px 32px;}
@@ -150,9 +150,16 @@
       font-family:var(--font-sans);font-weight:500;font-size:15px;outline:none;resize:none;border-radius:12px;transition:border-color .12s,box-shadow .12s;}
     .rsvp-note::placeholder{color:var(--ink-mute);opacity:0.65;font-weight:400;}
     .rsvp-note:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
-    .submit-btn{margin-top:24px;width:100%;padding:15px 0;border:0;border-radius:999px;background:var(--accent);color:#fff;
+    .submit-btn{position:relative;margin-top:24px;width:100%;padding:15px 0;border:0;border-radius:999px;background:var(--accent);color:#fff;
       font-family:var(--font-sans);font-weight:700;letter-spacing:2.5px;font-size:12px;text-transform:uppercase;cursor:pointer;transition:filter .12s,transform .12s;}
     .submit-btn:hover{filter:brightness(0.94);transform:translateY(-1px);}
+    .submit-btn__loader{display:none;}
+    .submit-btn.is-loading{cursor:default;}
+    .submit-btn.is-loading .submit-btn__label{visibility:hidden;}
+    .submit-btn.is-loading .submit-btn__loader{display:inline-block;position:absolute;left:50%;top:50%;
+      transform:translate(-50%,-50%);animation:submitLoaderSpin 1.1s linear infinite;}
+    @keyframes submitLoaderSpin{to{transform:translate(-50%,-50%) rotate(360deg);}}
+    @media (prefers-reduced-motion:reduce){.submit-btn.is-loading .submit-btn__loader{animation-duration:2.4s;}}
     .success-msg{display:none;text-align:center;padding:18px 6px 0;font-family:var(--font-sans);font-weight:600;font-size:17px;color:var(--accent);}
 
     /* ---------------- WISHES ---------------- */
@@ -380,7 +387,7 @@
             <div class="loc-sub" id="dresscodeSub" data-edit-id="dresscode-sub" data-kk="Киім талғамы" data-ru="Пожелание по стилю" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Киім талғамы</div>
           </div>
           <div class="invite-body toi-reveal-visible template-reveal-in" id="dresscodeBody" data-edit-id="dresscode-body" data-kk="Құрметті қонақтар, мерекелік кешімізге көрікті әрі салтанатты киіммен келулеріңізді сұраймыз." data-ru="Дорогие гости, просим прийти на торжество в красивой и нарядной одежде." data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Құрметті қонақтар, мерекелік кешімізге көрікті әрі салтанатты киіммен келулеріңізді сұраймыз.</div>
-          <img class="dresscode-img toi-reveal-visible template-reveal-in" src="./images/dresscode-outfits.webp" alt="Дресс-код мысалдары" loading="lazy" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+          <img class="dresscode-img toi-reveal-visible template-reveal-in" src="./images/dresscode-removed-bg.png" alt="Дресс-код мысалдары" loading="lazy" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
         </section>
 
       </div>
@@ -430,7 +437,22 @@
               <input id="rGuests" type="hidden" value="1">
               <input id="rAttending" type="hidden" value="true">
 
-              <button class="submit-btn" id="rsvpSubmitBtn" data-edit-id="rsvp-submit" type="submit" data-kk="Жіберу" data-ru="Отправить" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Жіберу</button>
+              <button class="submit-btn" id="rsvpSubmitBtn" type="submit">
+                <span class="submit-btn__label" data-edit-id="rsvp-submit" data-kk="Жіберу" data-ru="Отправить" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Жіберу</span>
+                <svg class="submit-btn__loader" viewBox="0 0 40 40" width="20" height="20" aria-hidden="true">
+                  <defs><path id="rsvpPetal" d="M20 5c-2.2 0-3.4 2.4-2.4 4.4l1.7 5.6c.3.9 1.1 1.4 1.7 1.4.6 0 1.4-.5 1.7-1.4l1.7-5.6c1-2-.2-4.4-2.4-4.4Z"/></defs>
+                  <g fill="currentColor">
+                    <use href="#rsvpPetal"></use>
+                    <use href="#rsvpPetal" transform="rotate(45 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(90 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(135 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(180 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(225 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(270 20 20)"></use>
+                    <use href="#rsvpPetal" transform="rotate(315 20 20)"></use>
+                  </g>
+                </svg>
+              </button>
             </form>
             <div class="success-msg" id="successMsg" data-edit-id="rsvp-success" data-kk="Рақмет! Жауабыңыз сақталды." data-ru="Спасибо! Ваш ответ сохранён." data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Рақмет! Жауабыңыз сақталды.</div>
           </div>
@@ -1881,7 +1903,7 @@
         };
 
         var submitBtn = document.getElementById('rsvpSubmitBtn');
-        if (submitBtn) { submitBtn.disabled = true; }
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.classList.add('is-loading'); }
 
         function showSuccess(){
             form.style.display = 'none';
@@ -1892,7 +1914,7 @@
             // Backend not wired up yet — don't lose the guest's answer, and don't
             // pretend it was saved either.
             console.warn('RSVP_ENDPOINT is not configured yet; response was not sent.', payload);
-            if (submitBtn) { submitBtn.disabled = false; }
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.classList.remove('is-loading'); }
             return;
         }
 
