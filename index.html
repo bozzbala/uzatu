@@ -70,6 +70,11 @@
     .section{position:relative;background:transparent;}
     .sec-pad{padding:56px 28px 40px;}
 
+    /* ---------------- BRIDE PHOTO (oval vignette frame) ---------------- */
+    .bride-photo-frame{width:170px;aspect-ratio:3/4;margin:0 auto 26px;border-radius:50%;overflow:hidden;
+      border:4px double var(--accent);box-shadow:0 14px 30px rgba(58,42,44,0.18);}
+    .bride-photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
+
     /* ---------------- INVITATION + CALENDAR ---------------- */
     .invite{text-align:center;}
     .invite-greeting{font-family:var(--font-display);font-size:30px;color:var(--accent);margin-bottom:24px;white-space:pre-line;}
@@ -363,6 +368,9 @@
       <div class="painted-content">
 
         <section class="section sec-pad invite" data-block="invite" data-edit-id="sec-invite" data-edit-container="" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">
+          <div class="bride-photo-frame toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+            <img src="./images/childhood/childhood-4.jpeg" alt="">
+          </div>
           <div class="invite-greeting toi-reveal-visible template-reveal-in" id="inviteGreeting" data-edit-id="invite-greeting" data-kk="Құрметті қонақтар!" data-ru="Дорогие гости!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Құрметті қонақтар!</div>
           <div class="invite-body toi-reveal-visible template-reveal-in" id="inviteBody" data-edit-id="invite-body" data-kk="Сіздерді қызымыздың ұзату тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-ru="Сіздерді қызымыздың ұзату тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">Туыс-туғандарымыз, аға-жеңгелеріміз, құда-құдағилар, дос-жарандарымыз бен әріптестер! Сіздерді қымбатты қызымыз Мадинаны ата-анасының аялы алақанынан бақытты отбасылық өмірге аттандыратын қуанышты да толғандырарлық сәтімізге құрметті қонақ болуға шақырамыз!</div>
           <div class="invite-date toi-reveal-visible template-reveal-in" id="inviteBigDate" data-bind="date" data-fmt="D MMMM YYYY" data-edit-id="bound-date-inviteBigDate" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 170ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">23 Қазан 2026</div>
@@ -387,8 +395,8 @@
       </div>
     </div>
 
-    <!-- PAINTED PAIR 1.5: childhood photos -->
-    <div class="painted">
+    <!-- PAINTED PAIR 1.5: childhood photos (hidden for now — single framed photo used instead, see sec-invite) -->
+    <div class="painted" style="display:none">
       <img class="painted-bg" src="https://toi.com.kz/template-assets/uzatu-template20/blossom-2.webp" alt="" aria-hidden="true" loading="lazy">
       <div class="painted-veil" aria-hidden="true"></div>
       <div class="painted-content">
