@@ -393,11 +393,7 @@
       <div class="painted-content">
 
         <section class="section childhood" data-block="childhood" data-edit-id="sec-childhood" data-edit-container="">
-          <div class="loc-inner toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
-            <div class="loc-title" id="childhoodTitle" data-edit-id="childhood-title" data-kk="Балалық шақ" data-ru="Детство" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Балалық шақ</div>
-            <div class="loc-sub" id="childhoodSub" data-edit-id="childhood-sub" data-kk="Есте қалған сәттер" data-ru="Памятные моменты" data-v3-x="0" data-v3-y="0" data-v3-scale="1" data-v3-rotation="0">Есте қалған сәттер</div>
-          </div>
-          <div class="swiper childhood-swiper toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 85ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
+          <div class="swiper childhood-swiper toi-reveal-visible template-reveal-in" data-toi-auto-reveal="" data-toi-reveal-delay="true" style="--toi-reveal-delay: 0ms;" data-toi-reveal-ready="true" data-toi-reveal-observed="true" data-toi-reveal-shown="true">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="./images/childhood/childhood-1.jpeg" alt="" loading="lazy"></div>
               <div class="swiper-slide"><img src="./images/childhood/childhood-2.jpeg" alt="" loading="lazy"></div>
@@ -1976,7 +1972,10 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
+        spaceBetween: 36,
+        initialSlide: 1,
         loop: true,
+        autoplay: { delay: 2000, disableOnInteraction: false },
         observer: true,
         observeParents: true,
         coverflowEffect: { rotate: 30, stretch: 0, depth: 120, modifier: 1, slideShadows: true },
